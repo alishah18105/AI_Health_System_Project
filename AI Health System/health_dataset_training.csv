@@ -1,0 +1,547 @@
+symptoms,disease
+"sneezing, runny nose",Common Cold
+"sneezing, sore throat",Common Cold
+"sneezing, mild fever",Common Cold
+"sneezing, runny nose, sore throat",Common Cold
+"sneezing, runny nose, mild fever",Common Cold
+"sneezing, runny nose, cough",Common Cold
+"sneezing, runny nose, sore throat, mild fever",Common Cold
+"sneezing, runny nose, sore throat, cough",Common Cold
+"sneezing, runny nose, sore throat, fatigue",Common Cold
+"sneezing, runny nose, sore throat, mild fever, cough",Common Cold
+"sneezing, runny nose, sore throat, mild fever, fatigue",Common Cold
+"sneezing, runny nose, sore throat, cough, fatigue",Common Cold
+"high fever, chills",Flu
+"high fever, muscle aches",Flu
+"high fever, cough",Flu
+"high fever, chills, muscle aches",Flu
+"high fever, chills, cough",Flu
+"high fever, chills, headache",Flu
+"high fever, chills, muscle aches, cough",Flu
+"high fever, chills, muscle aches, headache",Flu
+"high fever, chills, muscle aches, fatigue",Flu
+"high fever, chills, muscle aches, cough, headache",Flu
+"high fever, chills, muscle aches, cough, fatigue",Flu
+"high fever, chills, muscle aches, headache, fatigue",Flu
+"fever, chills",Malaria
+"fever, sweating",Malaria
+"fever, headache",Malaria
+"fever, chills, sweating",Malaria
+"fever, chills, headache",Malaria
+"fever, chills, nausea",Malaria
+"fever, chills, sweating, headache",Malaria
+"fever, chills, sweating, nausea",Malaria
+"fever, chills, sweating, vomiting",Malaria
+"fever, chills, sweating, headache, nausea",Malaria
+"fever, chills, sweating, headache, vomiting",Malaria
+"fever, chills, sweating, nausea, vomiting",Malaria
+"fever, severe headache",Dengue
+"fever, joint pain",Dengue
+"fever, rash",Dengue
+"fever, severe headache, joint pain",Dengue
+"fever, severe headache, rash",Dengue
+"fever, severe headache, nausea",Dengue
+"fever, severe headache, joint pain, rash",Dengue
+"fever, severe headache, joint pain, nausea",Dengue
+"fever, severe headache, joint pain, vomiting",Dengue
+"fever, severe headache, joint pain, rash, nausea",Dengue
+"fever, severe headache, joint pain, rash, vomiting",Dengue
+"fever, severe headache, joint pain, nausea, vomiting",Dengue
+"high fever, abdominal pain",Typhoid
+"high fever, headache",Typhoid
+"high fever, loss of appetite",Typhoid
+"high fever, abdominal pain, headache",Typhoid
+"high fever, abdominal pain, loss of appetite",Typhoid
+"high fever, abdominal pain, constipation",Typhoid
+"high fever, abdominal pain, headache, loss of appetite",Typhoid
+"high fever, abdominal pain, headache, constipation",Typhoid
+"high fever, abdominal pain, headache, fatigue",Typhoid
+"high fever, abdominal pain, headache, loss of appetite, constipation",Typhoid
+"high fever, abdominal pain, headache, loss of appetite, fatigue",Typhoid
+"high fever, abdominal pain, headache, constipation, fatigue",Typhoid
+"shortness of breath, wheezing",Asthma
+"shortness of breath, chest tightness",Asthma
+"shortness of breath, cough",Asthma
+"shortness of breath, wheezing, chest tightness",Asthma
+"shortness of breath, wheezing, cough",Asthma
+"shortness of breath, wheezing, difficulty breathing",Asthma
+"shortness of breath, wheezing, chest tightness, cough",Asthma
+"shortness of breath, wheezing, chest tightness, difficulty breathing",Asthma
+"shortness of breath, wheezing, cough, difficulty breathing",Asthma
+"shortness of breath, wheezing, chest tightness, cough, difficulty breathing",Asthma
+"frequent urination, increased thirst",Diabetes
+"frequent urination, fatigue",Diabetes
+"frequent urination, blurred vision",Diabetes
+"frequent urination, increased thirst, fatigue",Diabetes
+"frequent urination, increased thirst, blurred vision",Diabetes
+"frequent urination, increased thirst, slow wound healing",Diabetes
+"frequent urination, increased thirst, fatigue, blurred vision",Diabetes
+"frequent urination, increased thirst, fatigue, slow wound healing",Diabetes
+"frequent urination, increased thirst, blurred vision, slow wound healing",Diabetes
+"frequent urination, increased thirst, fatigue, blurred vision, slow wound healing",Diabetes
+"high blood pressure, headache",Hypertension
+"high blood pressure, dizziness",Hypertension
+"high blood pressure, blurred vision",Hypertension
+"high blood pressure, headache, dizziness",Hypertension
+"high blood pressure, headache, blurred vision",Hypertension
+"high blood pressure, headache, nosebleeds",Hypertension
+"high blood pressure, headache, dizziness, blurred vision",Hypertension
+"high blood pressure, headache, dizziness, nosebleeds",Hypertension
+"high blood pressure, headache, blurred vision, nosebleeds",Hypertension
+"high blood pressure, headache, dizziness, blurred vision, nosebleeds",Hypertension
+"severe headache, nausea",Migraine
+"severe headache, sensitivity to light",Migraine
+"severe headache, sensitivity to sound",Migraine
+"severe headache, nausea, sensitivity to light",Migraine
+"severe headache, nausea, sensitivity to sound",Migraine
+"severe headache, nausea, blurred vision",Migraine
+"severe headache, nausea, sensitivity to light, sensitivity to sound",Migraine
+"severe headache, nausea, sensitivity to light, blurred vision",Migraine
+"severe headache, nausea, sensitivity to sound, blurred vision",Migraine
+"severe headache, nausea, sensitivity to light, sensitivity to sound, blurred vision",Migraine
+"fatigue, pale skin",Anemia
+"fatigue, shortness of breath",Anemia
+"fatigue, dizziness",Anemia
+"fatigue, pale skin, shortness of breath",Anemia
+"fatigue, pale skin, dizziness",Anemia
+"fatigue, pale skin, cold hands and feet",Anemia
+"fatigue, pale skin, shortness of breath, dizziness",Anemia
+"fatigue, pale skin, shortness of breath, cold hands and feet",Anemia
+"fatigue, pale skin, dizziness, cold hands and feet",Anemia
+"fatigue, pale skin, shortness of breath, dizziness, cold hands and feet",Anemia
+"cough, mucus production",Bronchitis
+"cough, fatigue",Bronchitis
+"cough, shortness of breath",Bronchitis
+"cough, mucus production, fatigue",Bronchitis
+"cough, mucus production, shortness of breath",Bronchitis
+"cough, mucus production, slight fever",Bronchitis
+"cough, mucus production, fatigue, shortness of breath",Bronchitis
+"cough, mucus production, fatigue, slight fever",Bronchitis
+"cough, mucus production, fatigue, chest discomfort",Bronchitis
+"cough, mucus production, fatigue, shortness of breath, slight fever",Bronchitis
+"cough, mucus production, fatigue, shortness of breath, chest discomfort",Bronchitis
+"cough, mucus production, fatigue, slight fever, chest discomfort",Bronchitis
+"chest pain, cough",Pneumonia
+"chest pain, fever",Pneumonia
+"chest pain, shortness of breath",Pneumonia
+"chest pain, cough, fever",Pneumonia
+"chest pain, cough, shortness of breath",Pneumonia
+"chest pain, cough, fatigue",Pneumonia
+"chest pain, cough, fever, shortness of breath",Pneumonia
+"chest pain, cough, fever, fatigue",Pneumonia
+"chest pain, cough, fever, sweating",Pneumonia
+"chest pain, cough, fever, shortness of breath, fatigue",Pneumonia
+"chest pain, cough, fever, shortness of breath, sweating",Pneumonia
+"chest pain, cough, fever, fatigue, sweating",Pneumonia
+"diarrhea, vomiting",Gastroenteritis
+"diarrhea, stomach cramps",Gastroenteritis
+"diarrhea, fever",Gastroenteritis
+"diarrhea, vomiting, stomach cramps",Gastroenteritis
+"diarrhea, vomiting, fever",Gastroenteritis
+"diarrhea, vomiting, nausea",Gastroenteritis
+"diarrhea, vomiting, stomach cramps, fever",Gastroenteritis
+"diarrhea, vomiting, stomach cramps, nausea",Gastroenteritis
+"diarrhea, vomiting, stomach cramps, dehydration",Gastroenteritis
+"diarrhea, vomiting, stomach cramps, fever, nausea",Gastroenteritis
+"diarrhea, vomiting, stomach cramps, fever, dehydration",Gastroenteritis
+"diarrhea, vomiting, stomach cramps, nausea, dehydration",Gastroenteritis
+"persistent cough, weight loss",Tuberculosis
+"persistent cough, night sweats",Tuberculosis
+"persistent cough, fever",Tuberculosis
+"persistent cough, weight loss, night sweats",Tuberculosis
+"persistent cough, weight loss, fever",Tuberculosis
+"persistent cough, weight loss, fatigue",Tuberculosis
+"persistent cough, weight loss, night sweats, fever",Tuberculosis
+"persistent cough, weight loss, night sweats, fatigue",Tuberculosis
+"persistent cough, weight loss, night sweats, chest pain",Tuberculosis
+"persistent cough, weight loss, night sweats, fever, fatigue",Tuberculosis
+"persistent cough, weight loss, night sweats, fever, chest pain",Tuberculosis
+"persistent cough, weight loss, night sweats, fatigue, chest pain",Tuberculosis
+"fatigue, weight gain",Hypothyroidism
+"fatigue, cold intolerance",Hypothyroidism
+"fatigue, dry skin",Hypothyroidism
+"fatigue, weight gain, cold intolerance",Hypothyroidism
+"fatigue, weight gain, dry skin",Hypothyroidism
+"fatigue, weight gain, constipation",Hypothyroidism
+"fatigue, weight gain, cold intolerance, dry skin",Hypothyroidism
+"fatigue, weight gain, cold intolerance, constipation",Hypothyroidism
+"fatigue, weight gain, cold intolerance, depression",Hypothyroidism
+"fatigue, weight gain, cold intolerance, dry skin, constipation",Hypothyroidism
+"fatigue, weight gain, cold intolerance, dry skin, depression",Hypothyroidism
+"fatigue, weight gain, cold intolerance, constipation, depression",Hypothyroidism
+"itchy rash, fever",Chickenpox
+"itchy rash, fatigue",Chickenpox
+"itchy rash, loss of appetite",Chickenpox
+"itchy rash, fever, fatigue",Chickenpox
+"itchy rash, fever, loss of appetite",Chickenpox
+"itchy rash, fever, headache",Chickenpox
+"itchy rash, fever, fatigue, loss of appetite",Chickenpox
+"itchy rash, fever, fatigue, headache",Chickenpox
+"itchy rash, fever, fatigue, blisters",Chickenpox
+"itchy rash, fever, fatigue, loss of appetite, headache",Chickenpox
+"itchy rash, fever, fatigue, loss of appetite, blisters",Chickenpox
+"itchy rash, fever, fatigue, headache, blisters",Chickenpox
+"fever, dry cough",COVID-19
+"fever, fatigue",COVID-19
+"fever, loss of taste",COVID-19
+"fever, dry cough, fatigue",COVID-19
+"fever, dry cough, loss of taste",COVID-19
+"fever, dry cough, shortness of breath",COVID-19
+"fever, dry cough, fatigue, loss of taste",COVID-19
+"fever, dry cough, fatigue, shortness of breath",COVID-19
+"fever, dry cough, fatigue, sore throat",COVID-19
+"fever, dry cough, fatigue, loss of taste, shortness of breath",COVID-19
+"fever, dry cough, fatigue, loss of taste, sore throat",COVID-19
+"fever, dry cough, fatigue, shortness of breath, sore throat",COVID-19
+"sudden numbness, confusion",Stroke
+"sudden numbness, difficulty speaking",Stroke
+"sudden numbness, blurred vision",Stroke
+"sudden numbness, confusion, difficulty speaking",Stroke
+"sudden numbness, confusion, blurred vision",Stroke
+"sudden numbness, confusion, loss of balance",Stroke
+"sudden numbness, confusion, difficulty speaking, blurred vision",Stroke
+"sudden numbness, confusion, difficulty speaking, loss of balance",Stroke
+"sudden numbness, confusion, difficulty speaking, severe headache",Stroke
+"sudden numbness, confusion, difficulty speaking, blurred vision, loss of balance",Stroke
+"sudden numbness, confusion, difficulty speaking, blurred vision, severe headache",Stroke
+"sudden numbness, confusion, difficulty speaking, loss of balance, severe headache",Stroke
+"joint pain, swelling",Arthritis
+"joint pain, stiffness",Arthritis
+"joint pain, reduced range of motion",Arthritis
+"joint pain, swelling, stiffness",Arthritis
+"joint pain, swelling, reduced range of motion",Arthritis
+"joint pain, swelling, fatigue",Arthritis
+"joint pain, swelling, stiffness, reduced range of motion",Arthritis
+"joint pain, swelling, stiffness, fatigue",Arthritis
+"joint pain, swelling, reduced range of motion, fatigue",Arthritis
+"joint pain, swelling, stiffness, reduced range of motion, fatigue",Arthritis
+"persistent sadness, loss of interest",Depression
+"persistent sadness, fatigue",Depression
+"persistent sadness, changes in appetite",Depression
+"persistent sadness, loss of interest, fatigue",Depression
+"persistent sadness, loss of interest, changes in appetite",Depression
+"persistent sadness, loss of interest, difficulty concentrating",Depression
+"persistent sadness, loss of interest, fatigue, changes in appetite",Depression
+"persistent sadness, loss of interest, fatigue, difficulty concentrating",Depression
+"persistent sadness, loss of interest, fatigue, sleep disturbances",Depression
+"persistent sadness, loss of interest, fatigue, changes in appetite, difficulty concentrating",Depression
+"persistent sadness, loss of interest, fatigue, changes in appetite, sleep disturbances",Depression
+"persistent sadness, loss of interest, fatigue, difficulty concentrating, sleep disturbances",Depression
+"fatigue, swelling in legs",Chronic Kidney Disease
+"fatigue, shortness of breath",Chronic Kidney Disease
+"fatigue, nausea",Chronic Kidney Disease
+"fatigue, swelling in legs, shortness of breath",Chronic Kidney Disease
+"fatigue, swelling in legs, nausea",Chronic Kidney Disease
+"fatigue, swelling in legs, loss of appetite",Chronic Kidney Disease
+"fatigue, swelling in legs, shortness of breath, nausea",Chronic Kidney Disease
+"fatigue, swelling in legs, shortness of breath, loss of appetite",Chronic Kidney Disease
+"fatigue, swelling in legs, shortness of breath, frequent urination",Chronic Kidney Disease
+"fatigue, swelling in legs, shortness of breath, nausea, loss of appetite",Chronic Kidney Disease
+"fatigue, swelling in legs, shortness of breath, nausea, frequent urination",Chronic Kidney Disease
+"fatigue, swelling in legs, shortness of breath, loss of appetite, frequent urination",Chronic Kidney Disease
+"memory loss, confusion",Alzheimer’s Disease
+"memory loss, difficulty completing tasks",Alzheimer’s Disease
+"memory loss, problems with language",Alzheimer’s Disease
+"memory loss, confusion, difficulty completing tasks",Alzheimer’s Disease
+"memory loss, confusion, problems with language",Alzheimer’s Disease
+"memory loss, confusion, disorientation",Alzheimer’s Disease
+"memory loss, confusion, difficulty completing tasks, problems with language",Alzheimer’s Disease
+"memory loss, confusion, difficulty completing tasks, disorientation",Alzheimer’s Disease
+"memory loss, confusion, problems with language, disorientation",Alzheimer’s Disease
+"memory loss, confusion, difficulty completing tasks, problems with language, disorientation",Alzheimer’s Disease
+"tremors, slow movement",Parkinson’s Disease
+"tremors, rigid muscles",Parkinson’s Disease
+"tremors, impaired posture",Parkinson’s Disease
+"tremors, slow movement, rigid muscles",Parkinson’s Disease
+"tremors, slow movement, impaired posture",Parkinson’s Disease
+"tremors, slow movement, balance problems",Parkinson’s Disease
+"tremors, slow movement, rigid muscles, impaired posture",Parkinson’s Disease
+"tremors, slow movement, rigid muscles, balance problems",Parkinson’s Disease
+"tremors, slow movement, impaired posture, balance problems",Parkinson’s Disease
+"tremors, slow movement, rigid muscles, impaired posture, balance problems",Parkinson’s Disease
+"seizures, temporary confusion",Epilepsy
+"seizures, staring spells",Epilepsy
+"seizures, loss of consciousness",Epilepsy
+"seizures, temporary confusion, staring spells",Epilepsy
+"seizures, temporary confusion, loss of consciousness",Epilepsy
+"seizures, temporary confusion, muscle spasms",Epilepsy
+"seizures, temporary confusion, staring spells, loss of consciousness",Epilepsy
+"seizures, temporary confusion, staring spells, muscle spasms",Epilepsy
+"seizures, temporary confusion, loss of consciousness, muscle spasms",Epilepsy
+"seizures, temporary confusion, staring spells, loss of consciousness, muscle spasms",Epilepsy
+"back pain, loss of height",Osteoporosis
+"back pain, stooped posture",Osteoporosis
+"back pain, bone fractures",Osteoporosis
+"back pain, loss of height, stooped posture",Osteoporosis
+"back pain, loss of height, bone fractures",Osteoporosis
+"back pain, loss of height, weak bones",Osteoporosis
+"back pain, loss of height, stooped posture, bone fractures",Osteoporosis
+"back pain, loss of height, stooped posture, weak bones",Osteoporosis
+"back pain, loss of height, bone fractures, weak bones",Osteoporosis
+"back pain, loss of height, stooped posture, bone fractures, weak bones",Osteoporosis
+"severe diarrhea, dehydration",Cholera
+"severe diarrhea, vomiting",Cholera
+"severe diarrhea, muscle cramps",Cholera
+"severe diarrhea, dehydration, vomiting",Cholera
+"severe diarrhea, dehydration, muscle cramps",Cholera
+"severe diarrhea, dehydration, weakness",Cholera
+"severe diarrhea, dehydration, vomiting, muscle cramps",Cholera
+"severe diarrhea, dehydration, vomiting, weakness",Cholera
+"severe diarrhea, dehydration, muscle cramps, weakness",Cholera
+"severe diarrhea, dehydration, vomiting, muscle cramps, weakness",Cholera
+"jaundice, fatigue",Hepatitis B
+"jaundice, abdominal pain",Hepatitis B
+"jaundice, loss of appetite",Hepatitis B
+"jaundice, fatigue, abdominal pain",Hepatitis B
+"jaundice, fatigue, loss of appetite",Hepatitis B
+"jaundice, fatigue, nausea",Hepatitis B
+"jaundice, fatigue, abdominal pain, loss of appetite",Hepatitis B
+"jaundice, fatigue, abdominal pain, nausea",Hepatitis B
+"jaundice, fatigue, abdominal pain, joint pain",Hepatitis B
+"jaundice, fatigue, abdominal pain, loss of appetite, nausea",Hepatitis B
+"jaundice, fatigue, abdominal pain, loss of appetite, joint pain",Hepatitis B
+"jaundice, fatigue, abdominal pain, nausea, joint pain",Hepatitis B
+"dry skin, itching",Eczema
+"dry skin, redness",Eczema
+"dry skin, inflammation",Eczema
+"dry skin, itching, redness",Eczema
+"dry skin, itching, inflammation",Eczema
+"dry skin, itching, rash",Eczema
+"dry skin, itching, redness, inflammation",Eczema
+"dry skin, itching, redness, rash",Eczema
+"dry skin, itching, inflammation, rash",Eczema
+"dry skin, itching, redness, inflammation, rash",Eczema
+"red patches, scaly skin",Psoriasis
+"red patches, itching",Psoriasis
+"red patches, dryness",Psoriasis
+"red patches, scaly skin, itching",Psoriasis
+"red patches, scaly skin, dryness",Psoriasis
+"red patches, scaly skin, cracked skin",Psoriasis
+"red patches, scaly skin, itching, dryness",Psoriasis
+"red patches, scaly skin, itching, cracked skin",Psoriasis
+"red patches, scaly skin, dryness, cracked skin",Psoriasis
+"red patches, scaly skin, itching, dryness, cracked skin",Psoriasis
+"numbness, weakness",Multiple Sclerosis
+"numbness, vision problems",Multiple Sclerosis
+"numbness, balance issues",Multiple Sclerosis
+"numbness, weakness, vision problems",Multiple Sclerosis
+"numbness, weakness, balance issues",Multiple Sclerosis
+"numbness, weakness, fatigue",Multiple Sclerosis
+"numbness, weakness, vision problems, balance issues",Multiple Sclerosis
+"numbness, weakness, vision problems, fatigue",Multiple Sclerosis
+"numbness, weakness, balance issues, fatigue",Multiple Sclerosis
+"numbness, weakness, vision problems, balance issues, fatigue",Multiple Sclerosis
+"abdominal pain, bloating",Irritable Bowel Syndrome (IBS)
+"abdominal pain, diarrhea",Irritable Bowel Syndrome (IBS)
+"abdominal pain, constipation",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, diarrhea",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, constipation",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, gas",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, diarrhea, constipation",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, diarrhea, gas",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, diarrhea, cramping",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, diarrhea, constipation, gas",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, diarrhea, constipation, cramping",Irritable Bowel Syndrome (IBS)
+"abdominal pain, bloating, diarrhea, gas, cramping",Irritable Bowel Syndrome (IBS)
+"shortness of breath, chronic cough",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, wheezing",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, chest tightness",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, chronic cough, wheezing",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, chronic cough, chest tightness",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, chronic cough, fatigue",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, chronic cough, wheezing, chest tightness",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, chronic cough, wheezing, fatigue",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, chronic cough, chest tightness, fatigue",Chronic Obstructive Pulmonary Disease (COPD)
+"shortness of breath, chronic cough, wheezing, chest tightness, fatigue",Chronic Obstructive Pulmonary Disease (COPD)
+"intense joint pain, redness",Gout
+"intense joint pain, swelling",Gout
+"intense joint pain, warmth",Gout
+"intense joint pain, redness, swelling",Gout
+"intense joint pain, redness, warmth",Gout
+"intense joint pain, redness, limited joint movement",Gout
+"intense joint pain, redness, swelling, warmth",Gout
+"intense joint pain, redness, swelling, limited joint movement",Gout
+"intense joint pain, redness, warmth, limited joint movement",Gout
+"intense joint pain, redness, swelling, warmth, limited joint movement",Gout
+"weight loss, rapid heartbeat",Hyperthyroidism
+"weight loss, nervousness",Hyperthyroidism
+"weight loss, tremors",Hyperthyroidism
+"weight loss, rapid heartbeat, nervousness",Hyperthyroidism
+"weight loss, rapid heartbeat, tremors",Hyperthyroidism
+"weight loss, rapid heartbeat, increased appetite",Hyperthyroidism
+"weight loss, rapid heartbeat, nervousness, tremors",Hyperthyroidism
+"weight loss, rapid heartbeat, nervousness, increased appetite",Hyperthyroidism
+"weight loss, rapid heartbeat, nervousness, sweating",Hyperthyroidism
+"weight loss, rapid heartbeat, nervousness, tremors, increased appetite",Hyperthyroidism
+"weight loss, rapid heartbeat, nervousness, tremors, sweating",Hyperthyroidism
+"weight loss, rapid heartbeat, nervousness, increased appetite, sweating",Hyperthyroidism
+"facial pain, nasal congestion",Sinusitis
+"facial pain, runny nose",Sinusitis
+"facial pain, headache",Sinusitis
+"facial pain, nasal congestion, runny nose",Sinusitis
+"facial pain, nasal congestion, headache",Sinusitis
+"facial pain, nasal congestion, fever",Sinusitis
+"facial pain, nasal congestion, runny nose, headache",Sinusitis
+"facial pain, nasal congestion, runny nose, fever",Sinusitis
+"facial pain, nasal congestion, runny nose, post-nasal drip",Sinusitis
+"facial pain, nasal congestion, runny nose, headache, fever",Sinusitis
+"facial pain, nasal congestion, runny nose, headache, post-nasal drip",Sinusitis
+"facial pain, nasal congestion, runny nose, fever, post-nasal drip",Sinusitis
+"burning urination, frequent urge to urinate",Urinary Tract Infection (UTI)
+"burning urination, cloudy urine",Urinary Tract Infection (UTI)
+"burning urination, pelvic pain",Urinary Tract Infection (UTI)
+"burning urination, frequent urge to urinate, cloudy urine",Urinary Tract Infection (UTI)
+"burning urination, frequent urge to urinate, pelvic pain",Urinary Tract Infection (UTI)
+"burning urination, frequent urge to urinate, lower abdominal pain",Urinary Tract Infection (UTI)
+"burning urination, frequent urge to urinate, cloudy urine, pelvic pain",Urinary Tract Infection (UTI)
+"burning urination, frequent urge to urinate, cloudy urine, lower abdominal pain",Urinary Tract Infection (UTI)
+"burning urination, frequent urge to urinate, pelvic pain, lower abdominal pain",Urinary Tract Infection (UTI)
+"burning urination, frequent urge to urinate, cloudy urine, pelvic pain, lower abdominal pain",Urinary Tract Infection (UTI)
+"high fever, stiff neck",Meningitis
+"high fever, headache",Meningitis
+"high fever, nausea",Meningitis
+"high fever, stiff neck, headache",Meningitis
+"high fever, stiff neck, nausea",Meningitis
+"high fever, stiff neck, sensitivity to light",Meningitis
+"high fever, stiff neck, headache, nausea",Meningitis
+"high fever, stiff neck, headache, sensitivity to light",Meningitis
+"high fever, stiff neck, headache, confusion",Meningitis
+"high fever, stiff neck, headache, nausea, sensitivity to light",Meningitis
+"high fever, stiff neck, headache, nausea, confusion",Meningitis
+"high fever, stiff neck, headache, sensitivity to light, confusion",Meningitis
+"redness, swelling",Skin Infection (Cellulitis)
+"redness, pain",Skin Infection (Cellulitis)
+"redness, warmth",Skin Infection (Cellulitis)
+"redness, swelling, pain",Skin Infection (Cellulitis)
+"redness, swelling, warmth",Skin Infection (Cellulitis)
+"redness, swelling, fever",Skin Infection (Cellulitis)
+"redness, swelling, pain, warmth",Skin Infection (Cellulitis)
+"redness, swelling, pain, fever",Skin Infection (Cellulitis)
+"redness, swelling, pain, skin rash",Skin Infection (Cellulitis)
+"redness, swelling, pain, warmth, fever",Skin Infection (Cellulitis)
+"redness, swelling, pain, warmth, skin rash",Skin Infection (Cellulitis)
+"redness, swelling, pain, fever, skin rash",Skin Infection (Cellulitis)
+"excessive worry, restlessness",Anxiety Disorder
+"excessive worry, fatigue",Anxiety Disorder
+"excessive worry, difficulty concentrating",Anxiety Disorder
+"excessive worry, restlessness, fatigue",Anxiety Disorder
+"excessive worry, restlessness, difficulty concentrating",Anxiety Disorder
+"excessive worry, restlessness, muscle tension",Anxiety Disorder
+"excessive worry, restlessness, fatigue, difficulty concentrating",Anxiety Disorder
+"excessive worry, restlessness, fatigue, muscle tension",Anxiety Disorder
+"excessive worry, restlessness, fatigue, sleep disturbances",Anxiety Disorder
+"excessive worry, restlessness, fatigue, difficulty concentrating, muscle tension",Anxiety Disorder
+"excessive worry, restlessness, fatigue, difficulty concentrating, sleep disturbances",Anxiety Disorder
+"excessive worry, restlessness, fatigue, muscle tension, sleep disturbances",Anxiety Disorder
+"fever, chills",Influenza (Seasonal Flu)
+"fever, muscle aches",Influenza (Seasonal Flu)
+"fever, cough",Influenza (Seasonal Flu)
+"fever, chills, muscle aches",Influenza (Seasonal Flu)
+"fever, chills, cough",Influenza (Seasonal Flu)
+"fever, chills, fatigue",Influenza (Seasonal Flu)
+"fever, chills, muscle aches, cough",Influenza (Seasonal Flu)
+"fever, chills, muscle aches, fatigue",Influenza (Seasonal Flu)
+"fever, chills, muscle aches, headache",Influenza (Seasonal Flu)
+"fever, chills, muscle aches, cough, fatigue",Influenza (Seasonal Flu)
+"fever, chills, muscle aches, cough, headache",Influenza (Seasonal Flu)
+"fever, chills, muscle aches, fatigue, headache",Influenza (Seasonal Flu)
+"persistent cough, chest pain",Lung Cancer
+"persistent cough, shortness of breath",Lung Cancer
+"persistent cough, weight loss",Lung Cancer
+"persistent cough, chest pain, shortness of breath",Lung Cancer
+"persistent cough, chest pain, weight loss",Lung Cancer
+"persistent cough, chest pain, fatigue",Lung Cancer
+"persistent cough, chest pain, shortness of breath, weight loss",Lung Cancer
+"persistent cough, chest pain, shortness of breath, fatigue",Lung Cancer
+"persistent cough, chest pain, shortness of breath, coughing blood",Lung Cancer
+"persistent cough, chest pain, shortness of breath, weight loss, fatigue",Lung Cancer
+"persistent cough, chest pain, shortness of breath, weight loss, coughing blood",Lung Cancer
+"persistent cough, chest pain, shortness of breath, fatigue, coughing blood",Lung Cancer
+"fever, swollen lymph nodes",HIV/AIDS
+"fever, fatigue",HIV/AIDS
+"fever, weight loss",HIV/AIDS
+"fever, swollen lymph nodes, fatigue",HIV/AIDS
+"fever, swollen lymph nodes, weight loss",HIV/AIDS
+"fever, swollen lymph nodes, night sweats",HIV/AIDS
+"fever, swollen lymph nodes, fatigue, weight loss",HIV/AIDS
+"fever, swollen lymph nodes, fatigue, night sweats",HIV/AIDS
+"fever, swollen lymph nodes, fatigue, persistent infections",HIV/AIDS
+"fever, swollen lymph nodes, fatigue, weight loss, night sweats",HIV/AIDS
+"fever, swollen lymph nodes, fatigue, weight loss, persistent infections",HIV/AIDS
+"fever, swollen lymph nodes, fatigue, night sweats, persistent infections",HIV/AIDS
+"upper abdominal pain, nausea",Pancreatitis
+"upper abdominal pain, vomiting",Pancreatitis
+"upper abdominal pain, fever",Pancreatitis
+"upper abdominal pain, nausea, vomiting",Pancreatitis
+"upper abdominal pain, nausea, fever",Pancreatitis
+"upper abdominal pain, nausea, rapid pulse",Pancreatitis
+"upper abdominal pain, nausea, vomiting, fever",Pancreatitis
+"upper abdominal pain, nausea, vomiting, rapid pulse",Pancreatitis
+"upper abdominal pain, nausea, fever, rapid pulse",Pancreatitis
+"upper abdominal pain, nausea, vomiting, fever, rapid pulse",Pancreatitis
+"diarrhea, bloating",Celiac Disease
+"diarrhea, weight loss",Celiac Disease
+"diarrhea, fatigue",Celiac Disease
+"diarrhea, bloating, weight loss",Celiac Disease
+"diarrhea, bloating, fatigue",Celiac Disease
+"diarrhea, bloating, anemia",Celiac Disease
+"diarrhea, bloating, weight loss, fatigue",Celiac Disease
+"diarrhea, bloating, weight loss, anemia",Celiac Disease
+"diarrhea, bloating, weight loss, abdominal pain",Celiac Disease
+"diarrhea, bloating, weight loss, fatigue, anemia",Celiac Disease
+"diarrhea, bloating, weight loss, fatigue, abdominal pain",Celiac Disease
+"diarrhea, bloating, weight loss, anemia, abdominal pain",Celiac Disease
+"joint pain, swelling",Psoriatic Arthritis
+"joint pain, red scaly skin patches",Psoriatic Arthritis
+"joint pain, fatigue",Psoriatic Arthritis
+"joint pain, swelling, red scaly skin patches",Psoriatic Arthritis
+"joint pain, swelling, fatigue",Psoriatic Arthritis
+"joint pain, swelling, stiffness",Psoriatic Arthritis
+"joint pain, swelling, red scaly skin patches, fatigue",Psoriatic Arthritis
+"joint pain, swelling, red scaly skin patches, stiffness",Psoriatic Arthritis
+"joint pain, swelling, fatigue, stiffness",Psoriatic Arthritis
+"joint pain, swelling, red scaly skin patches, fatigue, stiffness",Psoriatic Arthritis
+"joint pain, swelling",Rheumatoid Arthritis
+"joint pain, morning stiffness",Rheumatoid Arthritis
+"joint pain, fatigue",Rheumatoid Arthritis
+"joint pain, swelling, morning stiffness",Rheumatoid Arthritis
+"joint pain, swelling, fatigue",Rheumatoid Arthritis
+"joint pain, swelling, fever",Rheumatoid Arthritis
+"joint pain, swelling, morning stiffness, fatigue",Rheumatoid Arthritis
+"joint pain, swelling, morning stiffness, fever",Rheumatoid Arthritis
+"joint pain, swelling, fatigue, fever",Rheumatoid Arthritis
+"joint pain, swelling, morning stiffness, fatigue, fever",Rheumatoid Arthritis
+"fatigue, joint pain",Lupus
+"fatigue, rash",Lupus
+"fatigue, fever",Lupus
+"fatigue, joint pain, rash",Lupus
+"fatigue, joint pain, fever",Lupus
+"fatigue, joint pain, hair loss",Lupus
+"fatigue, joint pain, rash, fever",Lupus
+"fatigue, joint pain, rash, hair loss",Lupus
+"fatigue, joint pain, rash, photosensitivity",Lupus
+"fatigue, joint pain, rash, fever, hair loss",Lupus
+"fatigue, joint pain, rash, fever, photosensitivity",Lupus
+"fatigue, joint pain, rash, hair loss, photosensitivity",Lupus
+"involuntary movements, cognitive decline",Huntington’s Disease
+"involuntary movements, mood swings",Huntington’s Disease
+"involuntary movements, difficulty swallowing",Huntington’s Disease
+"involuntary movements, cognitive decline, mood swings",Huntington’s Disease
+"involuntary movements, cognitive decline, difficulty swallowing",Huntington’s Disease
+"involuntary movements, cognitive decline, balance problems",Huntington’s Disease
+"involuntary movements, cognitive decline, mood swings, difficulty swallowing",Huntington’s Disease
+"involuntary movements, cognitive decline, mood swings, balance problems",Huntington’s Disease
+"involuntary movements, cognitive decline, difficulty swallowing, balance problems",Huntington’s Disease
+"involuntary movements, cognitive decline, mood swings, difficulty swallowing, balance problems",Huntington’s Disease
+"fatigue, weight loss",Sarcoidosis
+"fatigue, fever",Sarcoidosis
+"fatigue, shortness of breath",Sarcoidosis
+"fatigue, weight loss, fever",Sarcoidosis
+"fatigue, weight loss, shortness of breath",Sarcoidosis
+"fatigue, weight loss, cough",Sarcoidosis
+"fatigue, weight loss, fever, shortness of breath",Sarcoidosis
+"fatigue, weight loss, fever, cough",Sarcoidosis
+"fatigue, weight loss, fever, skin lesions",Sarcoidosis
+"fatigue, weight loss, fever, shortness of breath, cough",Sarcoidosis
+"fatigue, weight loss, fever, shortness of breath, skin lesions",Sarcoidosis
+"fatigue, weight loss, fever, cough, skin lesions",Sarcoidosis

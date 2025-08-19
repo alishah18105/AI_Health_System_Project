@@ -1,0 +1,408 @@
+[
+  {
+    "disease": "Common Cold",
+    "symptoms": ["sneezing", "runny nose", "sore throat", "mild fever", "cough", "fatigue"],
+    "description": "A mild viral infection affecting the nose and throat.",
+    "medication": ["Paracetamol", "Cough syrup", "Antihistamines"],
+    "prevention": ["Wash hands regularly", "Avoid close contact with sick people", "Stay hydrated"],
+    "diet_plan": ["Warm soups", "Herbal tea", "Vitamin C rich fruits"]
+  },
+  {
+    "disease": "Flu",
+    "symptoms": ["high fever", "chills", "muscle aches", "cough", "headache", "fatigue"],
+    "description": "A contagious respiratory illness caused by influenza viruses.",
+    "medication": ["Oseltamivir", "Paracetamol", "Cough syrup"],
+    "prevention": ["Get flu vaccine", "Avoid crowded places", "Wash hands often"],
+    "diet_plan": ["Warm fluids", "Ginger tea", "Vitamin-rich foods"]
+  },
+  {
+    "disease": "Malaria",
+    "symptoms": ["fever", "chills", "sweating", "headache", "nausea", "vomiting"],
+    "description": "A mosquito-borne disease causing fever, chills, and flu-like symptoms.",
+    "medication": ["Chloroquine", "ACT therapy", "Quinine"],
+    "prevention": ["Use mosquito nets", "Apply insect repellent", "Drain standing water"],
+    "diet_plan": ["Iron-rich foods", "Plenty of water", "Fresh fruits and vegetables"]
+  },
+  {
+    "disease": "Dengue",
+    "symptoms": ["fever", "severe headache", "joint pain", "rash", "nausea", "vomiting"],
+    "description": "A mosquito-borne viral infection causing high fever and severe body pain.",
+    "medication": ["Paracetamol", "IV fluids", "Rest"],
+    "prevention": ["Avoid mosquito bites", "Eliminate standing water", "Wear long-sleeved clothes"],
+    "diet_plan": ["ORS solution", "Fresh fruit juices", "Light meals"]
+  },
+  {
+    "disease": "Typhoid",
+    "symptoms": ["high fever", "abdominal pain", "headache", "loss of appetite", "constipation", "fatigue"],
+    "description": "A bacterial infection that can lead to high fever, diarrhea, and vomiting.",
+    "medication": ["Ciprofloxacin", "Azithromycin", "Ceftriaxone"],
+    "prevention": ["Drink clean water", "Wash food before eating", "Avoid street food"],
+    "diet_plan": ["Soft bland foods", "Plenty of fluids", "Fresh fruits"]
+  },
+  {
+    "disease": "Asthma",
+    "symptoms": ["shortness of breath", "wheezing", "chest tightness", "cough", "difficulty breathing"],
+    "description": "A condition where airways narrow and swell, making breathing difficult.",
+    "medication": ["Inhalers", "Bronchodilators", "Corticosteroids"],
+    "prevention": ["Avoid allergens", "Stay away from smoke", "Use air purifiers"],
+    "diet_plan": ["Vitamin C rich foods", "Omega-3 fatty acids", "Warm fluids"]
+  },
+  {
+    "disease": "Diabetes",
+    "symptoms": ["frequent urination", "increased thirst", "fatigue", "blurred vision", "slow wound healing"],
+    "description": "A chronic condition affecting blood sugar regulation.",
+    "medication": ["Insulin", "Metformin", "Sulfonylureas"],
+    "prevention": ["Maintain healthy weight", "Exercise regularly", "Eat balanced meals"],
+    "diet_plan": ["Low sugar diet", "High fiber foods", "Leafy greens"]
+  },
+  {
+    "disease": "Hypertension",
+    "symptoms": ["high blood pressure", "headache", "dizziness", "blurred vision", "nosebleeds"],
+    "description": "A condition where the force of blood against artery walls is too high.",
+    "medication": ["ACE inhibitors", "Beta blockers", "Diuretics"],
+    "prevention": ["Reduce salt intake", "Exercise daily", "Manage stress"],
+    "diet_plan": ["Low sodium diet", "Fruits and vegetables", "Whole grains"]
+  },
+  {
+    "disease": "Migraine",
+    "symptoms": ["severe headache", "nausea", "sensitivity to light", "sensitivity to sound", "blurred vision"],
+    "description": "A neurological condition causing intense headaches often with sensory disturbances.",
+    "medication": ["Ibuprofen", "Triptans", "Anti-nausea medications"],
+    "prevention": ["Avoid trigger foods", "Maintain sleep schedule", "Reduce stress"],
+    "diet_plan": ["Magnesium-rich foods", "Plenty of water", "Avoid processed foods"]
+  },
+  {
+    "disease": "Anemia",
+    "symptoms": ["fatigue", "pale skin", "shortness of breath", "dizziness", "cold hands and feet"],
+    "description": "A condition where you lack enough healthy red blood cells to carry oxygen.",
+    "medication": ["Iron supplements", "Vitamin B12 injections", "Folic acid"],
+    "prevention": ["Eat iron-rich foods", "Treat underlying causes", "Regular check-ups"],
+    "diet_plan": ["Spinach", "Red meat", "Lentils"]
+  },
+
+  {
+    "disease": "Bronchitis",
+    "symptoms": ["cough", "mucus production", "fatigue", "shortness of breath", "slight fever", "chest discomfort"],
+    "description": "Inflammation of the bronchial tubes causing cough and mucus production.",
+    "medication": ["Cough suppressants", "Bronchodilators", "Pain relievers"],
+    "prevention": ["Avoid smoking", "Wash hands regularly", "Avoid air pollutants"],
+    "diet_plan": ["Warm fluids", "Honey", "Fruits rich in antioxidants"]
+  },
+  {
+    "disease": "Pneumonia",
+    "symptoms": ["chest pain", "cough", "fever", "shortness of breath", "fatigue", "sweating"],
+    "description": "Infection that inflames air sacs in the lungs causing cough and breathing difficulty.",
+    "medication": ["Antibiotics", "Fever reducers", "Cough medicine"],
+    "prevention": ["Vaccination", "Good hygiene", "Avoid smoking"],
+    "diet_plan": ["Hydrating fluids", "Nutritious soups", "Vitamin C rich fruits"]
+  },
+  {
+    "disease": "Gastroenteritis",
+    "symptoms": ["diarrhea", "vomiting", "stomach cramps", "fever", "nausea", "dehydration"],
+    "description": "Inflammation of the stomach and intestines causing diarrhea and vomiting.",
+    "medication": ["Oral rehydration salts", "Antiemetics", "Rest"],
+    "prevention": ["Wash hands before eating", "Drink clean water", "Avoid contaminated food"],
+    "diet_plan": ["BRAT diet (Bananas, Rice, Applesauce, Toast)", "Plenty of fluids", "Avoid dairy"]
+  },
+  {
+    "disease": "Tuberculosis",
+    "symptoms": ["persistent cough", "weight loss", "night sweats", "fever", "fatigue", "chest pain"],
+    "description": "A serious infectious disease mainly affecting the lungs.",
+    "medication": ["Isoniazid", "Rifampicin", "Ethambutol"],
+    "prevention": ["BCG vaccination", "Good ventilation", "Avoid close contact with TB patients"],
+    "diet_plan": ["Protein-rich foods", "Vitamins A and C", "Hydrating fluids"]
+  },
+  {
+    "disease": "Hypothyroidism",
+    "symptoms": ["fatigue", "weight gain", "cold intolerance", "dry skin", "constipation", "depression"],
+    "description": "A condition where the thyroid gland does not produce enough hormones.",
+    "medication": ["Levothyroxine"],
+    "prevention": ["Iodine-rich diet", "Regular check-ups", "Manage stress"],
+    "diet_plan": ["Iodine-rich foods", "Whole grains", "Fresh fruits and vegetables"]
+  },
+  {
+    "disease": "Chickenpox",
+    "symptoms": ["itchy rash", "fever", "fatigue", "loss of appetite", "headache", "blisters"],
+    "description": "A contagious viral infection causing an itchy, blister-like rash.",
+    "medication": ["Antihistamines", "Calamine lotion", "Fever reducers"],
+    "prevention": ["Vaccination", "Avoid contact with infected persons", "Good hygiene"],
+    "diet_plan": ["Hydrating fluids", "Soft bland foods", "Vitamin-rich fruits"]
+  },
+  {
+    "disease": "COVID-19",
+    "symptoms": ["fever", "dry cough", "fatigue", "loss of taste", "shortness of breath", "sore throat"],
+    "description": "A viral respiratory illness caused by the SARS-CoV-2 virus.",
+    "medication": ["Paracetamol", "Oxygen therapy", "Antiviral drugs"],
+    "prevention": ["Wear masks", "Social distancing", "Hand hygiene"],
+    "diet_plan": ["Nutritious balanced diet", "Hydrating fluids", "Vitamin D rich foods"]
+  },
+  {
+    "disease": "Stroke",
+    "symptoms": ["sudden numbness", "confusion", "difficulty speaking", "blurred vision", "loss of balance", "severe headache"],
+    "description": "A medical emergency where blood flow to the brain is interrupted.",
+    "medication": ["Blood thinners", "Antihypertensives", "Cholesterol-lowering drugs"],
+    "prevention": ["Control blood pressure", "Exercise regularly", "Healthy diet"],
+    "diet_plan": ["Low salt diet", "Fruits and vegetables", "Whole grains"]
+  },
+  {
+    "disease": "Arthritis",
+    "symptoms": ["joint pain", "swelling", "stiffness", "reduced range of motion", "fatigue"],
+    "description": "Inflammation of the joints causing pain and stiffness.",
+    "medication": ["NSAIDs", "Corticosteroids", "Pain relievers"],
+    "prevention": ["Regular exercise", "Maintain healthy weight", "Avoid joint injuries"],
+    "diet_plan": ["Omega-3 rich foods", "Fruits and vegetables", "Whole grains"]
+  },
+  {
+    "disease": "Depression",
+    "symptoms": ["persistent sadness", "loss of interest", "fatigue", "changes in appetite", "difficulty concentrating", "sleep disturbances"],
+    "description": "A mood disorder causing persistent feelings of sadness and loss of interest.",
+    "medication": ["Antidepressants", "Psychotherapy", "Mood stabilizers"],
+    "prevention": ["Stress management", "Social support", "Regular exercise"],
+    "diet_plan": ["Omega-3 fatty acids", "B vitamins", "Fruits and vegetables"]
+  },
+  
+  {
+    "disease": "Chronic Kidney Disease",
+    "symptoms": ["fatigue", "swelling in legs", "shortness of breath", "nausea", "loss of appetite", "frequent urination"],
+    "description": "Gradual loss of kidney function leading to waste buildup in the body.",
+    "medication": ["Blood pressure medications", "Diuretics", "Erythropoietin"],
+    "prevention": ["Control blood sugar", "Maintain healthy blood pressure", "Limit salt intake"],
+    "diet_plan": ["Low protein diet", "Limit potassium and phosphorus", "Stay hydrated"]
+  },
+  {
+    "disease": "Alzheimer’s Disease",
+    "symptoms": ["memory loss", "confusion", "difficulty completing tasks", "problems with language", "disorientation"],
+    "description": "A progressive brain disorder causing memory and cognitive decline.",
+    "medication": ["Cholinesterase inhibitors", "Memantine"],
+    "prevention": ["Mental exercises", "Healthy diet", "Regular physical activity"],
+    "diet_plan": ["Antioxidant-rich foods", "Omega-3 fatty acids", "Fruits and vegetables"]
+  },
+  {
+    "disease": "Parkinson’s Disease",
+    "symptoms": ["tremors", "slow movement", "rigid muscles", "impaired posture", "balance problems"],
+    "description": "A nervous system disorder affecting movement and coordination.",
+    "medication": ["Levodopa", "Dopamine agonists", "MAO-B inhibitors"],
+    "prevention": ["Regular exercise", "Healthy diet", "Avoid toxins"],
+    "diet_plan": ["High fiber foods", "Plenty of fluids", "Balanced nutrition"]
+  },
+  {
+    "disease": "Epilepsy",
+    "symptoms": ["seizures", "temporary confusion", "staring spells", "loss of consciousness", "muscle spasms"],
+    "description": "A neurological disorder marked by recurrent seizures.",
+    "medication": ["Antiepileptic drugs", "Vagus nerve stimulation"],
+    "prevention": ["Avoid triggers", "Medication adherence", "Manage stress"],
+    "diet_plan": ["Ketogenic diet", "Balanced meals", "Hydration"]
+  },
+  {
+    "disease": "Osteoporosis",
+    "symptoms": ["back pain", "loss of height", "stooped posture", "bone fractures", "weak bones"],
+    "description": "A condition causing bones to become weak and brittle.",
+    "medication": ["Bisphosphonates", "Calcium supplements", "Vitamin D"],
+    "prevention": ["Weight-bearing exercises", "Adequate calcium intake", "Avoid smoking"],
+    "diet_plan": ["Calcium-rich foods", "Vitamin D sources", "Protein-rich foods"]
+  },
+  {
+    "disease": "Cholera",
+    "symptoms": ["severe diarrhea", "dehydration", "vomiting", "muscle cramps", "weakness"],
+    "description": "A bacterial infection causing severe watery diarrhea and dehydration.",
+    "medication": ["Oral rehydration salts", "Antibiotics"],
+    "prevention": ["Drink safe water", "Proper sanitation", "Food hygiene"],
+    "diet_plan": ["Oral rehydration solution", "Light, bland foods", "Hydrating fluids"]
+  },
+  {
+    "disease": "Hepatitis B",
+    "symptoms": ["jaundice", "fatigue", "abdominal pain", "loss of appetite", "nausea", "joint pain"],
+    "description": "A viral infection that causes liver inflammation.",
+    "medication": ["Antiviral medications", "Liver support therapy"],
+    "prevention": ["Vaccination", "Safe sex practices", "Avoid sharing needles"],
+    "diet_plan": ["Low-fat diet", "Plenty of fluids", "Balanced nutrition"]
+  },
+  {
+    "disease": "Eczema",
+    "symptoms": ["dry skin", "itching", "redness", "inflammation", "rash"],
+    "description": "A condition causing inflamed, itchy, cracked, and rough skin.",
+    "medication": ["Moisturizers", "Topical steroids", "Antihistamines"],
+    "prevention": ["Avoid irritants", "Keep skin moisturized", "Manage stress"],
+    "diet_plan": ["Omega-3 fatty acids", "Vitamin E rich foods", "Avoid allergens"]
+  },
+  {
+    "disease": "Psoriasis",
+    "symptoms": ["red patches", "scaly skin", "itching", "dryness", "cracked skin"],
+    "description": "A skin disease causing red, scaly patches that can be itchy and painful.",
+    "medication": ["Topical treatments", "Phototherapy", "Systemic medications"],
+    "prevention": ["Manage stress", "Avoid skin injuries", "Moisturize regularly"],
+    "diet_plan": ["Anti-inflammatory foods", "Fruits and vegetables", "Omega-3 rich foods"]
+  },
+  {
+    "disease": "Multiple Sclerosis",
+    "symptoms": ["numbness", "weakness", "vision problems", "balance issues", "fatigue"],
+    "description": "A disease where the immune system attacks the protective sheath of nerves.",
+    "medication": ["Immunomodulators", "Corticosteroids", "Physical therapy"],
+    "prevention": ["Healthy lifestyle", "Avoid smoking", "Manage stress"],
+    "diet_plan": ["Vitamin D rich foods", "Omega-3 fatty acids", "Balanced diet"]
+  },
+
+  {
+    "disease": "Irritable Bowel Syndrome (IBS)",
+    "symptoms": ["abdominal pain", "bloating", "diarrhea", "constipation", "gas", "cramping"],
+    "description": "A common disorder affecting the large intestine causing discomfort and altered bowel habits.",
+    "medication": ["Antispasmodics", "Fiber supplements", "Laxatives or antidiarrheals"],
+    "prevention": ["Manage stress", "Eat a high-fiber diet", "Avoid trigger foods"],
+    "diet_plan": ["Low FODMAP foods", "Plenty of fluids", "Small frequent meals"]
+  },
+  {
+    "disease": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "symptoms": ["shortness of breath", "chronic cough", "wheezing", "chest tightness", "fatigue"],
+    "description": "A group of lung diseases that block airflow and make breathing difficult.",
+    "medication": ["Bronchodilators", "Inhaled steroids", "Oxygen therapy"],
+    "prevention": ["Avoid smoking", "Avoid air pollutants", "Get vaccinated"],
+    "diet_plan": ["High-calorie nutritious foods", "Small frequent meals", "Plenty of fluids"]
+  },
+  {
+    "disease": "Gout",
+    "symptoms": ["intense joint pain", "redness", "swelling", "warmth", "limited joint movement"],
+    "description": "A form of arthritis caused by excess uric acid leading to joint inflammation.",
+    "medication": ["NSAIDs", "Colchicine", "Corticosteroids"],
+    "prevention": ["Limit alcohol", "Avoid purine-rich foods", "Maintain healthy weight"],
+    "diet_plan": ["Low-purine foods", "Cherries", "Hydrating fluids"]
+  },
+  {
+    "disease": "Hyperthyroidism",
+    "symptoms": ["weight loss", "rapid heartbeat", "nervousness", "tremors", "increased appetite", "sweating"],
+    "description": "A condition where the thyroid gland produces too much hormone.",
+    "medication": ["Antithyroid medications", "Beta blockers", "Radioactive iodine"],
+    "prevention": ["Regular check-ups", "Avoid excess iodine intake", "Manage stress"],
+    "diet_plan": ["Balanced diet", "Avoid excessive iodine", "Plenty of fluids"]
+  },
+  {
+    "disease": "Sinusitis",
+    "symptoms": ["facial pain", "nasal congestion", "runny nose", "headache", "fever", "post-nasal drip"],
+    "description": "Inflammation of the sinuses causing pain and congestion.",
+    "medication": ["Decongestants", "Nasal corticosteroids", "Pain relievers"],
+    "prevention": ["Avoid allergens", "Use humidifiers", "Practice good hygiene"],
+    "diet_plan": ["Hydrating fluids", "Warm soups", "Vitamin C rich foods"]
+  },
+  {
+    "disease": "Urinary Tract Infection (UTI)",
+    "symptoms": ["burning urination", "frequent urge to urinate", "cloudy urine", "pelvic pain", "lower abdominal pain"],
+    "description": "Infection in any part of the urinary system causing pain and discomfort.",
+    "medication": ["Antibiotics", "Pain relievers", "Increased fluid intake"],
+    "prevention": ["Drink plenty of water", "Urinate after intercourse", "Maintain hygiene"],
+    "diet_plan": ["Cranberry juice", "Hydrating fluids", "Balanced diet"]
+  },
+  {
+    "disease": "Meningitis",
+    "symptoms": ["high fever", "stiff neck", "headache", "nausea", "sensitivity to light", "confusion"],
+    "description": "Inflammation of the membranes surrounding the brain and spinal cord.",
+    "medication": ["Antibiotics", "Corticosteroids", "Supportive care"],
+    "prevention": ["Vaccination", "Good hygiene", "Avoid close contact"],
+    "diet_plan": ["Nutritious fluids", "Balanced diet", "Plenty of rest"]
+  },
+  {
+    "disease": "Skin Infection (Cellulitis)",
+    "symptoms": ["redness", "swelling", "pain", "warmth", "fever", "skin rash"],
+    "description": "A bacterial infection of the skin causing redness and swelling.",
+    "medication": ["Antibiotics", "Pain relievers", "Rest"],
+    "prevention": ["Keep wounds clean", "Avoid skin injuries", "Maintain hygiene"],
+    "diet_plan": ["Protein-rich foods", "Hydrating fluids", "Balanced diet"]
+  },
+  {
+    "disease": "Anxiety Disorder",
+    "symptoms": ["excessive worry", "restlessness", "fatigue", "difficulty concentrating", "muscle tension", "sleep disturbances"],
+    "description": "A mental health disorder characterized by persistent anxiety and fear.",
+    "medication": ["Anti-anxiety medications", "Therapy", "Lifestyle changes"],
+    "prevention": ["Stress management", "Regular exercise", "Adequate sleep"],
+    "diet_plan": ["Magnesium-rich foods", "Omega-3 fatty acids", "Balanced meals"]
+  },
+  {
+    "disease": "Influenza (Seasonal Flu)",
+    "symptoms": ["fever", "chills", "muscle aches", "cough", "fatigue", "headache"],
+    "description": "A contagious respiratory illness caused by influenza viruses.",
+    "medication": ["Antiviral drugs", "Fever reducers", "Rest"],
+    "prevention": ["Annual flu vaccine", "Hand hygiene", "Avoid close contact with sick individuals"],
+    "diet_plan": ["Hydrating fluids", "Nutritious soups", "Vitamin C rich foods"]
+  },
+  {
+    "disease": "Lung Cancer",
+    "symptoms": ["persistent cough", "chest pain", "shortness of breath", "weight loss", "fatigue", "coughing blood"],
+    "description": "A malignant lung tumor characterized by uncontrolled cell growth.",
+    "medication": ["Chemotherapy", "Radiation therapy", "Surgery"],
+    "prevention": ["Avoid smoking", "Avoid exposure to carcinogens", "Regular screenings"],
+    "diet_plan": ["High-protein foods", "Antioxidant-rich fruits", "Balanced nutrition"]
+  },
+  {
+    "disease": "HIV/AIDS",
+    "symptoms": ["fever", "swollen lymph nodes", "fatigue", "weight loss", "night sweats", "persistent infections"],
+    "description": "A virus that attacks the immune system, leading to immune deficiency.",
+    "medication": ["Antiretroviral therapy (ART)"],
+    "prevention": ["Safe sex practices", "Avoid sharing needles", "Regular testing"],
+    "diet_plan": ["High-calorie nutritious foods", "Protein-rich diet", "Hydrating fluids"]
+  },
+  {
+    "disease": "Pancreatitis",
+    "symptoms": ["upper abdominal pain", "nausea", "vomiting", "fever", "rapid pulse"],
+    "description": "Inflammation of the pancreas causing severe abdominal pain.",
+    "medication": ["Pain relievers", "IV fluids", "Enzyme supplements"],
+    "prevention": ["Limit alcohol", "Healthy diet", "Manage gallstones"],
+    "diet_plan": ["Low-fat diet", "Small frequent meals", "Hydrating fluids"]
+  },
+  {
+    "disease": "Celiac Disease",
+    "symptoms": ["diarrhea", "bloating", "weight loss", "fatigue", "anemia", "abdominal pain"],
+    "description": "An immune reaction to eating gluten causing damage to the small intestine.",
+    "medication": ["Gluten-free diet"],
+    "prevention": ["Avoid gluten-containing foods", "Read food labels carefully", "Consult dietitian"],
+    "diet_plan": ["Gluten-free grains", "Fresh fruits and vegetables", "Lean proteins"]
+  },
+  {
+    "disease": "Psoriatic Arthritis",
+    "symptoms": ["joint pain", "swelling", "red scaly skin patches", "fatigue", "stiffness"],
+    "description": "An inflammatory arthritis associated with psoriasis.",
+    "medication": ["NSAIDs", "DMARDs", "Biologics"],
+    "prevention": ["Manage psoriasis", "Regular exercise", "Healthy weight"],
+    "diet_plan": ["Anti-inflammatory foods", "Omega-3 rich foods", "Fruits and vegetables"]
+  },
+  {
+    "disease": "Rheumatoid Arthritis",
+    "symptoms": ["joint pain", "swelling", "morning stiffness", "fatigue", "fever"],
+    "description": "An autoimmune disorder causing chronic inflammation of joints.",
+    "medication": ["DMARDs", "NSAIDs", "Corticosteroids"],
+    "prevention": ["Avoid smoking", "Maintain healthy weight", "Regular exercise"],
+    "diet_plan": ["Omega-3 fatty acids", "Fruits and vegetables", "Whole grains"]
+  },
+  {
+    "disease": "Lupus",
+    "symptoms": ["fatigue", "joint pain", "rash", "fever", "hair loss", "photosensitivity"],
+    "description": "An autoimmune disease causing inflammation and damage to various body tissues.",
+    "medication": ["NSAIDs", "Corticosteroids", "Immunosuppressants"],
+    "prevention": ["Avoid sunlight exposure", "Manage stress", "Regular medical check-ups"],
+    "diet_plan": ["Anti-inflammatory foods", "Vitamin D rich foods", "Balanced diet"]
+  },
+  {
+    "disease": "Parkinson’s Disease",
+    "symptoms": ["tremors", "slow movement", "rigid muscles", "impaired posture", "balance problems"],
+    "description": "A nervous system disorder affecting movement and coordination.",
+    "medication": ["Levodopa", "Dopamine agonists", "MAO-B inhibitors"],
+    "prevention": ["Regular exercise", "Healthy diet", "Avoid toxins"],
+    "diet_plan": ["High fiber foods", "Plenty of fluids", "Balanced nutrition"]
+  },
+  {
+    "disease": "Huntington’s Disease",
+    "symptoms": ["involuntary movements", "cognitive decline", "mood swings", "difficulty swallowing", "balance problems"],
+    "description": "A genetic disorder causing progressive breakdown of nerve cells in the brain.",
+    "medication": ["Tetrabenazine", "Antipsychotics", "Physical therapy"],
+    "prevention": ["Genetic counseling", "Supportive care", "Healthy lifestyle"],
+    "diet_plan": ["High-calorie diet", "Balanced nutrition", "Small frequent meals"]
+  },
+  {
+    "disease": "Sarcoidosis",
+    "symptoms": ["fatigue", "weight loss", "fever", "shortness of breath", "cough", "skin lesions"],
+    "description": "An inflammatory disease causing granulomas in multiple organs.",
+    "medication": ["Corticosteroids", "Immunosuppressants"],
+    "prevention": ["No known prevention", "Manage symptoms", "Regular medical care"],
+    "diet_plan": ["Balanced diet", "Anti-inflammatory foods", "Hydrating fluids"]
+  }
+]
+
+
+

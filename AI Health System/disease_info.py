@@ -8,11 +8,11 @@ import json
 app = Flask(__name__)
 
 # Load dataset CSV for training model
-dataset_path = 'health_dataset_training.csv'
+dataset_path = 'data/health_dataset_training.csv'
 data = pd.read_csv(dataset_path)
 
 # Load and process disease info JSON
-with open('health_dataset.json', 'r', encoding='utf-8') as f:
+with open('data/health_dataset.json', 'r', encoding='utf-8') as f:
     diseases_list = json.load(f)
 
 # Convert list of disease info to dict keyed by disease name,

@@ -8,7 +8,7 @@ from sklearn.utils.multiclass import unique_labels
 
 
 # Load data
-data = pd.read_csv('health_dataset_training.csv')
+data = pd.read_csv('data/health_dataset_training.csv')
 
 # Preprocess symptoms text
 data['symptoms'] = data['symptoms'].str.lower()

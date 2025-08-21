@@ -9,7 +9,7 @@ from remarks_rules import generate_remarks
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # Load CBC reference dataset
-REFERENCE_FILE = "cbc_reference_dataset.csv"
+REFERENCE_FILE = "data/cbc_reference_dataset.csv"
 reference_df = pd.read_csv(REFERENCE_FILE)
 reference_df['test'] = reference_df['test'].str.strip().str.upper()
 

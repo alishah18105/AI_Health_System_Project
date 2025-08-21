@@ -73,16 +73,30 @@ class HealthChatbotUI:
 
         if self.expecting_info_type:
             choice = user_text.lower()
-            if choice == 'no':
+
+            # Handle multiple info types (e.g., "medication and prevention")
+            requested_info = []
+            for option in ["medication", "prevention", "diet plan"]:
+                if option in choice:
+                    requested_info.append(option)
+
+            # If user says "no"
+            if "no" in choice:
                 self.show_message("Bot", "Thank you for using the Health Chatbot. Stay healthy!")
                 self.expecting_info_type = False
                 return
-            elif choice in ['medication', 'prevention', 'diet plan']:
-                threading.Thread(target=self.query_info, args=(self.last_disease, choice)).start()
+
+            # If one or more info types found
+            if requested_info:
+                for option in requested_info:
+                    threading.Thread(target=self.query_info, args=(self.last_disease, option)).start()
             else:
                 self.show_message("Bot", "Please enter medication, prevention, diet plan, or no.")
+
         else:
+            # First phase: predicting disease from symptoms
             threading.Thread(target=self.query_predict, args=(user_text,)).start()
+
 
     def query_predict(self, symptoms):
         try:

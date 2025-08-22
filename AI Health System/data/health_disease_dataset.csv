@@ -1,0 +1,501 @@
+symptom,disease,min_symptoms_count
+"runny nose, headache, sneezing",Common Cold,1
+"sore throat, runny nose, sneezing, headache",Common Cold,1
+"headache, fever, runny nose, sneezing, sore throat",Common Cold,1
+"fever, runny nose, sore throat, sneezing",Common Cold,1
+"sneezing, headache",Common Cold,1
+"sneezing, sore throat, fever, runny nose, headache",Common Cold,1
+"fever, sneezing, headache, runny nose",Common Cold,1
+"sore throat, runny nose, headache, fever, sneezing",Common Cold,1
+runny nose,Common Cold,1
+"sneezing, sore throat, runny nose, headache, fever",Common Cold,1
+sore throat,Common Cold,1
+headache,Common Cold,1
+sneezing,Common Cold,1
+"sneezing, headache, runny nose, fever",Common Cold,1
+"fever, sneezing, headache, runny nose, sore throat",Common Cold,1
+"fever, sneezing, runny nose, headache",Common Cold,1
+"runny nose, sore throat, sneezing, fever, headache",Common Cold,1
+"sore throat, runny nose, fever, sneezing, headache",Common Cold,1
+"runny nose, sneezing, headache",Common Cold,1
+"fever, runny nose, headache, sneezing, sore throat",Common Cold,1
+"runny nose, fever, sore throat, sneezing, headache",Common Cold,1
+"runny nose, sneezing, fever",Common Cold,1
+"sneezing, sore throat",Common Cold,1
+fever,Common Cold,1
+"fever, sneezing, sore throat",Common Cold,1
+"sneezing, runny nose, fever, sore throat",Common Cold,1
+"sore throat, sneezing, headache, runny nose, fever",Common Cold,1
+"headache, runny nose, sore throat, fever",Common Cold,1
+"fever, sore throat, runny nose",Common Cold,1
+"runny nose, headache",Common Cold,1
+"sore throat, fever, runny nose, headache, sneezing",Common Cold,1
+"fever, sore throat",Common Cold,1
+"sore throat, sneezing, fever, runny nose",Common Cold,1
+"sneezing, headache",Common Cold,1
+headache,Common Cold,1
+"sneezing, fever, sore throat",Common Cold,1
+"headache, runny nose, fever, sneezing, sore throat",Common Cold,1
+"runny nose, fever, headache",Common Cold,1
+"headache, sore throat, fever",Common Cold,1
+fever,Common Cold,1
+"fever, sore throat",Common Cold,1
+"runny nose, headache",Common Cold,1
+"headache, sneezing, fever, runny nose",Common Cold,1
+"headache, sore throat",Common Cold,1
+"fever, sore throat, headache",Common Cold,1
+"runny nose, sore throat, headache",Common Cold,1
+"headache, fever, sore throat, sneezing, runny nose",Common Cold,1
+"sore throat, headache, runny nose, fever, sneezing",Common Cold,1
+"sneezing, runny nose",Common Cold,1
+"sneezing, headache, fever",Common Cold,1
+"muscle aches, fever, chills",Influenza (Flu),1
+"headache, fatigue, fever",Influenza (Flu),1
+"headache, chills, fever",Influenza (Flu),1
+headache,Influenza (Flu),1
+"fever, muscle aches, headache, chills",Influenza (Flu),1
+"headache, muscle aches, chills, fever, fatigue",Influenza (Flu),1
+"fever, fatigue, headache",Influenza (Flu),1
+"fatigue, headache, chills, fever, muscle aches",Influenza (Flu),1
+"muscle aches, chills, fever",Influenza (Flu),1
+"fatigue, fever",Influenza (Flu),1
+headache,Influenza (Flu),1
+"fever, chills",Influenza (Flu),1
+headache,Influenza (Flu),1
+headache,Influenza (Flu),1
+"headache, fever, muscle aches, chills, fatigue",Influenza (Flu),1
+"fatigue, fever, headache, chills, muscle aches",Influenza (Flu),1
+fever,Influenza (Flu),1
+"chills, fever",Influenza (Flu),1
+"muscle aches, fatigue, fever, chills, headache",Influenza (Flu),1
+"chills, headache",Influenza (Flu),1
+"fatigue, muscle aches, chills, headache, fever",Influenza (Flu),1
+muscle aches,Influenza (Flu),1
+"fatigue, headache, chills",Influenza (Flu),1
+"chills, fatigue, headache, fever, muscle aches",Influenza (Flu),1
+"fever, fatigue, muscle aches, headache, chills",Influenza (Flu),1
+"muscle aches, chills, fever",Influenza (Flu),1
+"muscle aches, fatigue, chills, headache, fever",Influenza (Flu),1
+"muscle aches, fatigue, headache, chills, fever",Influenza (Flu),1
+"fatigue, chills, muscle aches",Influenza (Flu),1
+chills,Influenza (Flu),1
+"fever, chills, fatigue",Influenza (Flu),1
+"fever, chills, muscle aches, headache",Influenza (Flu),1
+"chills, fatigue, headache",Influenza (Flu),1
+chills,Influenza (Flu),1
+"chills, headache, muscle aches",Influenza (Flu),1
+"headache, muscle aches",Influenza (Flu),1
+"muscle aches, fatigue, headache, chills, fever",Influenza (Flu),1
+"headache, muscle aches, chills",Influenza (Flu),1
+"chills, fatigue",Influenza (Flu),1
+"headache, chills",Influenza (Flu),1
+"fever, fatigue",Influenza (Flu),1
+"fever, muscle aches, headache, fatigue, chills",Influenza (Flu),1
+"headache, muscle aches, chills, fever",Influenza (Flu),1
+"fever, headache, fatigue, muscle aches",Influenza (Flu),1
+"headache, fatigue",Influenza (Flu),1
+"muscle aches, headache",Influenza (Flu),1
+"muscle aches, fever, fatigue, chills, headache",Influenza (Flu),1
+"fatigue, muscle aches, chills, fever, headache",Influenza (Flu),1
+"fever, headache, chills, fatigue",Influenza (Flu),1
+"chills, headache, fatigue, muscle aches",Influenza (Flu),1
+"nausea, rash, headache, vomiting, joint pain",Dengue Fever,3
+"headache, fever, joint pain, rash, vomiting",Dengue Fever,3
+"rash, headache, vomiting",Dengue Fever,3
+"vomiting, joint pain, nausea, headache, muscle aches, fever",Dengue Fever,3
+"joint pain, headache, rash, nausea, fever, vomiting",Dengue Fever,3
+"fever, nausea, headache, joint pain, vomiting, muscle aches, rash",Dengue Fever,3
+"vomiting, nausea, rash, joint pain, headache, muscle aches",Dengue Fever,3
+"nausea, rash, vomiting",Dengue Fever,3
+"headache, joint pain, vomiting, nausea",Dengue Fever,3
+"vomiting, rash, muscle aches, headache, fever, nausea, joint pain",Dengue Fever,3
+"rash, vomiting, fever",Dengue Fever,3
+"nausea, vomiting, headache, muscle aches",Dengue Fever,3
+"nausea, headache, fever, rash, joint pain, vomiting, muscle aches",Dengue Fever,3
+"nausea, headache, vomiting",Dengue Fever,3
+"vomiting, headache, nausea, fever, muscle aches",Dengue Fever,3
+"vomiting, nausea, headache, muscle aches, rash, joint pain, fever",Dengue Fever,3
+"rash, nausea, muscle aches, vomiting, headache, joint pain, fever",Dengue Fever,3
+"rash, nausea, muscle aches, joint pain, vomiting, headache, fever",Dengue Fever,3
+"fever, nausea, muscle aches, vomiting, rash, headache",Dengue Fever,3
+"joint pain, nausea, muscle aches, vomiting",Dengue Fever,3
+"joint pain, headache, vomiting, nausea, muscle aches, fever, rash",Dengue Fever,3
+"headache, muscle aches, nausea, rash, fever, vomiting, joint pain",Dengue Fever,3
+"joint pain, headache, vomiting, muscle aches, fever, rash",Dengue Fever,3
+"headache, muscle aches, nausea, joint pain, fever, vomiting, rash",Dengue Fever,3
+"vomiting, joint pain, rash, headache, fever, nausea, muscle aches",Dengue Fever,3
+"joint pain, nausea, vomiting, headache, muscle aches, fever",Dengue Fever,3
+"vomiting, muscle aches, rash, fever",Dengue Fever,3
+"joint pain, muscle aches, nausea",Dengue Fever,3
+"rash, joint pain, nausea",Dengue Fever,3
+"fever, vomiting, nausea",Dengue Fever,3
+"fever, nausea, rash, vomiting, joint pain, muscle aches, headache",Dengue Fever,3
+"vomiting, muscle aches, joint pain",Dengue Fever,3
+"joint pain, vomiting, rash, nausea",Dengue Fever,3
+"nausea, headache, joint pain, rash, fever, vomiting, muscle aches",Dengue Fever,3
+"fever, rash, joint pain, nausea, headache, vomiting",Dengue Fever,3
+"vomiting, fever, rash",Dengue Fever,3
+"vomiting, nausea, headache, rash, muscle aches",Dengue Fever,3
+"fever, headache, muscle aches, joint pain, vomiting",Dengue Fever,3
+"headache, nausea, fever, joint pain, rash, vomiting, muscle aches",Dengue Fever,3
+"fever, rash, nausea, vomiting, headache, joint pain, muscle aches",Dengue Fever,3
+"nausea, vomiting, fever, headache, rash, muscle aches",Dengue Fever,3
+"nausea, joint pain, fever, vomiting",Dengue Fever,3
+"headache, fever, joint pain, vomiting",Dengue Fever,3
+"vomiting, nausea, joint pain",Dengue Fever,3
+"headache, muscle aches, rash, fever, joint pain, vomiting, nausea",Dengue Fever,3
+"nausea, vomiting, joint pain, muscle aches",Dengue Fever,3
+"vomiting, joint pain, nausea",Dengue Fever,3
+"rash, joint pain, nausea, headache, vomiting, muscle aches, fever",Dengue Fever,3
+"fever, headache, joint pain, muscle aches, vomiting, rash",Dengue Fever,3
+"headache, joint pain, muscle aches, fever, nausea, vomiting, rash",Dengue Fever,3
+"headache, vomiting, chills, nausea",Malaria,3
+"nausea, headache, sweating, chills, vomiting",Malaria,3
+"fever, chills, vomiting",Malaria,3
+"chills, headache, sweating, vomiting, fever",Malaria,3
+"sweating, chills, nausea, vomiting, headache, fever",Malaria,3
+"sweating, nausea, vomiting",Malaria,3
+"nausea, sweating, fever, chills, headache",Malaria,3
+"fever, nausea, vomiting, headache, sweating",Malaria,3
+"fever, nausea, chills, headache",Malaria,3
+"chills, vomiting, nausea, sweating",Malaria,3
+"nausea, fever, sweating",Malaria,3
+"sweating, headache, vomiting",Malaria,3
+"sweating, headache, vomiting, fever, nausea",Malaria,3
+"vomiting, sweating, chills, nausea, fever, headache",Malaria,3
+"nausea, fever, sweating",Malaria,3
+"vomiting, chills, sweating, nausea, fever, headache",Malaria,3
+"sweating, vomiting, fever, chills, headache, nausea",Malaria,3
+"sweating, headache, vomiting, nausea, chills",Malaria,3
+"vomiting, nausea, headache, chills",Malaria,3
+"chills, vomiting, headache, fever, sweating",Malaria,3
+"nausea, chills, fever",Malaria,3
+"chills, fever, headache, sweating, nausea",Malaria,3
+"vomiting, headache, chills, sweating, fever, nausea",Malaria,3
+"headache, sweating, fever, chills, vomiting, nausea",Malaria,3
+"headache, nausea, chills",Malaria,3
+"vomiting, headache, fever, sweating, nausea, chills",Malaria,3
+"chills, nausea, headache",Malaria,3
+"chills, fever, nausea, headache, vomiting, sweating",Malaria,3
+"headache, vomiting, nausea",Malaria,3
+"vomiting, nausea, chills, fever, sweating",Malaria,3
+"headache, nausea, sweating",Malaria,3
+"chills, sweating, headache, fever, vomiting",Malaria,3
+"chills, fever, sweating, headache, nausea, vomiting",Malaria,3
+"chills, headache, sweating, fever, nausea, vomiting",Malaria,3
+"chills, nausea, headache, vomiting",Malaria,3
+"fever, headache, nausea, vomiting",Malaria,3
+"sweating, headache, nausea, fever, chills, vomiting",Malaria,3
+"vomiting, chills, fever, headache, nausea",Malaria,3
+"chills, vomiting, fever, headache",Malaria,3
+"headache, sweating, chills, nausea, fever, vomiting",Malaria,3
+"fever, chills, nausea, sweating, vomiting",Malaria,3
+"chills, vomiting, fever, sweating",Malaria,3
+"headache, sweating, chills, fever, vomiting, nausea",Malaria,3
+"vomiting, headache, chills",Malaria,3
+"headache, vomiting, sweating, fever, chills",Malaria,3
+"fever, headache, nausea",Malaria,3
+"headache, nausea, vomiting, chills, sweating, fever",Malaria,3
+"nausea, headache, vomiting, sweating, chills",Malaria,3
+"chills, nausea, fever, vomiting, headache",Malaria,3
+"headache, vomiting, chills, fever, nausea",Malaria,3
+"fever, vomiting, abdominal pain, nausea, diarrhea",Typhoid Fever,3
+"diarrhea, fever, nausea, vomiting",Typhoid Fever,3
+"abdominal pain, vomiting, nausea, diarrhea",Typhoid Fever,3
+"vomiting, diarrhea, nausea",Typhoid Fever,3
+"diarrhea, fever, vomiting, abdominal pain, nausea",Typhoid Fever,3
+"abdominal pain, diarrhea, fever, headache",Typhoid Fever,3
+"nausea, vomiting, diarrhea, abdominal pain, headache, fever",Typhoid Fever,3
+"vomiting, diarrhea, fever",Typhoid Fever,3
+"headache, vomiting, nausea",Typhoid Fever,3
+"fever, diarrhea, abdominal pain, nausea, headache",Typhoid Fever,3
+"vomiting, headache, diarrhea, abdominal pain, fever, nausea",Typhoid Fever,3
+"nausea, abdominal pain, diarrhea, fever, vomiting, headache",Typhoid Fever,3
+"abdominal pain, headache, nausea, fever, diarrhea",Typhoid Fever,3
+"abdominal pain, nausea, diarrhea, vomiting",Typhoid Fever,3
+"nausea, fever, diarrhea, abdominal pain, headache, vomiting",Typhoid Fever,3
+"headache, nausea, fever",Typhoid Fever,3
+"nausea, abdominal pain, vomiting, headache",Typhoid Fever,3
+"vomiting, fever, diarrhea, abdominal pain",Typhoid Fever,3
+"diarrhea, fever, headache, nausea, abdominal pain",Typhoid Fever,3
+"nausea, diarrhea, abdominal pain, headache, fever, vomiting",Typhoid Fever,3
+"headache, fever, vomiting, diarrhea, abdominal pain",Typhoid Fever,3
+"abdominal pain, nausea, fever",Typhoid Fever,3
+"diarrhea, vomiting, headache, fever, nausea, abdominal pain",Typhoid Fever,3
+"nausea, vomiting, diarrhea, fever, abdominal pain, headache",Typhoid Fever,3
+"nausea, vomiting, headache, abdominal pain, fever, diarrhea",Typhoid Fever,3
+"vomiting, nausea, fever, diarrhea, abdominal pain",Typhoid Fever,3
+"diarrhea, fever, nausea, vomiting, headache, abdominal pain",Typhoid Fever,3
+"abdominal pain, headache, diarrhea, nausea, vomiting",Typhoid Fever,3
+"headache, diarrhea, abdominal pain, vomiting, fever",Typhoid Fever,3
+"nausea, vomiting, abdominal pain",Typhoid Fever,3
+"nausea, diarrhea, abdominal pain, fever, vomiting, headache",Typhoid Fever,3
+"nausea, diarrhea, vomiting, abdominal pain, fever, headache",Typhoid Fever,3
+"abdominal pain, fever, vomiting, headache, nausea",Typhoid Fever,3
+"fever, vomiting, nausea, diarrhea",Typhoid Fever,3
+"abdominal pain, fever, headache, nausea, vomiting",Typhoid Fever,3
+"nausea, vomiting, diarrhea, headache",Typhoid Fever,3
+"vomiting, diarrhea, nausea, headache, abdominal pain",Typhoid Fever,3
+"diarrhea, abdominal pain, fever, vomiting",Typhoid Fever,3
+"vomiting, nausea, diarrhea",Typhoid Fever,3
+"headache, abdominal pain, nausea, diarrhea, fever, vomiting",Typhoid Fever,3
+"vomiting, headache, nausea, abdominal pain, fever, diarrhea",Typhoid Fever,3
+"fever, nausea, abdominal pain",Typhoid Fever,3
+"vomiting, nausea, fever, abdominal pain, diarrhea",Typhoid Fever,3
+"diarrhea, headache, nausea",Typhoid Fever,3
+"headache, vomiting, nausea, abdominal pain, diarrhea, fever",Typhoid Fever,3
+"nausea, headache, diarrhea, fever, vomiting, abdominal pain",Typhoid Fever,3
+"fever, abdominal pain, headache, nausea",Typhoid Fever,3
+"vomiting, fever, abdominal pain",Typhoid Fever,3
+"nausea, abdominal pain, headache, fever",Typhoid Fever,3
+"headache, abdominal pain, vomiting, fever, nausea, diarrhea",Typhoid Fever,3
+"swelling, joint pain, mild fever",Arthritis,3
+"joint pain, fatigue, mild fever, swelling, stiffness",Arthritis,3
+"joint pain, swelling, fatigue, mild fever",Arthritis,3
+"stiffness, joint pain, mild fever, swelling",Arthritis,3
+"fatigue, swelling, mild fever, joint pain, stiffness",Arthritis,3
+"stiffness, mild fever, fatigue, joint pain, swelling",Arthritis,3
+"swelling, stiffness, mild fever",Arthritis,3
+"joint pain, fatigue, mild fever, stiffness, swelling",Arthritis,3
+"stiffness, swelling, fatigue",Arthritis,3
+"joint pain, swelling, stiffness, mild fever",Arthritis,3
+"mild fever, fatigue, swelling, stiffness, joint pain",Arthritis,3
+"joint pain, swelling, stiffness",Arthritis,3
+"swelling, joint pain, mild fever",Arthritis,3
+"fatigue, joint pain, stiffness, mild fever, swelling",Arthritis,3
+"joint pain, stiffness, fatigue, mild fever",Arthritis,3
+"fatigue, mild fever, joint pain, swelling, stiffness",Arthritis,3
+"joint pain, stiffness, mild fever, fatigue",Arthritis,3
+"joint pain, mild fever, swelling, fatigue",Arthritis,3
+"fatigue, swelling, joint pain, mild fever",Arthritis,3
+"swelling, fatigue, mild fever",Arthritis,3
+"mild fever, joint pain, fatigue, swelling",Arthritis,3
+"fatigue, mild fever, joint pain",Arthritis,3
+"mild fever, joint pain, swelling",Arthritis,3
+"joint pain, swelling, fatigue, stiffness, mild fever",Arthritis,3
+"mild fever, fatigue, swelling, joint pain",Arthritis,3
+"swelling, stiffness, joint pain, fatigue",Arthritis,3
+"swelling, mild fever, stiffness",Arthritis,3
+"fatigue, swelling, mild fever",Arthritis,3
+"swelling, fatigue, joint pain, mild fever, stiffness",Arthritis,3
+"mild fever, fatigue, stiffness, joint pain",Arthritis,3
+"fatigue, mild fever, swelling, stiffness",Arthritis,3
+"joint pain, swelling, stiffness, mild fever, fatigue",Arthritis,3
+"joint pain, swelling, mild fever, stiffness",Arthritis,3
+"mild fever, swelling, stiffness, joint pain",Arthritis,3
+"stiffness, mild fever, fatigue, swelling, joint pain",Arthritis,3
+"swelling, fatigue, joint pain, stiffness, mild fever",Arthritis,3
+"joint pain, swelling, mild fever",Arthritis,3
+"swelling, joint pain, fatigue, mild fever, stiffness",Arthritis,3
+"swelling, stiffness, joint pain, fatigue, mild fever",Arthritis,3
+"joint pain, mild fever, fatigue",Arthritis,3
+"mild fever, joint pain, stiffness",Arthritis,3
+"stiffness, mild fever, fatigue, joint pain",Arthritis,3
+"joint pain, swelling, stiffness, fatigue, mild fever",Arthritis,3
+"swelling, mild fever, fatigue",Arthritis,3
+"stiffness, mild fever, joint pain, swelling, fatigue",Arthritis,3
+"joint pain, mild fever, fatigue, swelling",Arthritis,3
+"fatigue, swelling, mild fever",Arthritis,3
+"fatigue, joint pain, mild fever",Arthritis,3
+"fatigue, mild fever, stiffness",Arthritis,3
+"joint pain, stiffness, fatigue, swelling",Arthritis,3
+"rash, dry skin, itching, redness, inflammation",Eczema,3
+"redness, rash, itching",Eczema,3
+"itching, rash, dry skin",Eczema,3
+"dry skin, inflammation, redness",Eczema,3
+"inflammation, rash, redness, dry skin",Eczema,3
+"redness, inflammation, dry skin, rash",Eczema,3
+"rash, dry skin, redness",Eczema,3
+"inflammation, dry skin, rash",Eczema,3
+"inflammation, rash, redness, itching, dry skin",Eczema,3
+"redness, rash, itching, dry skin",Eczema,3
+"redness, rash, dry skin, inflammation",Eczema,3
+"inflammation, rash, itching",Eczema,3
+"rash, inflammation, redness, itching, dry skin",Eczema,3
+"inflammation, redness, itching, rash",Eczema,3
+"itching, rash, inflammation",Eczema,3
+"itching, dry skin, redness",Eczema,3
+"rash, inflammation, redness, dry skin, itching",Eczema,3
+"itching, dry skin, rash, inflammation",Eczema,3
+"itching, redness, rash, dry skin, inflammation",Eczema,3
+"itching, redness, dry skin, inflammation, rash",Eczema,3
+"dry skin, itching, redness, inflammation, rash",Eczema,3
+"inflammation, rash, itching",Eczema,3
+"dry skin, rash, inflammation, redness, itching",Eczema,3
+"rash, itching, redness, dry skin",Eczema,3
+"itching, redness, rash, inflammation",Eczema,3
+"itching, rash, dry skin, redness",Eczema,3
+"itching, dry skin, rash",Eczema,3
+"inflammation, dry skin, redness, rash, itching",Eczema,3
+"itching, redness, inflammation, dry skin",Eczema,3
+"itching, inflammation, dry skin, rash, redness",Eczema,3
+"dry skin, redness, inflammation, itching",Eczema,3
+"itching, rash, inflammation, dry skin",Eczema,3
+"redness, itching, rash, inflammation",Eczema,3
+"dry skin, inflammation, itching",Eczema,3
+"inflammation, rash, redness, itching, dry skin",Eczema,3
+"itching, redness, inflammation",Eczema,3
+"inflammation, redness, itching",Eczema,3
+"redness, dry skin, inflammation, rash, itching",Eczema,3
+"itching, redness, inflammation, rash, dry skin",Eczema,3
+"itching, rash, dry skin, redness",Eczema,3
+"redness, dry skin, inflammation",Eczema,3
+"rash, itching, redness, dry skin",Eczema,3
+"inflammation, dry skin, redness, itching",Eczema,3
+"inflammation, rash, redness, dry skin",Eczema,3
+"inflammation, itching, rash, redness, dry skin",Eczema,3
+"dry skin, redness, rash, itching, inflammation",Eczema,3
+"inflammation, rash, dry skin, itching, redness",Eczema,3
+"redness, rash, inflammation",Eczema,3
+"rash, itching, redness, inflammation",Eczema,3
+"redness, dry skin, rash, inflammation, itching",Eczema,3
+"fever, headache, runny nose, facial pain, nasal congestion",Sinusitis,3
+"headache, nasal congestion, runny nose, fever, facial pain",Sinusitis,3
+"headache, fever, facial pain, nasal congestion",Sinusitis,3
+"nasal congestion, runny nose, fever",Sinusitis,3
+"facial pain, fever, nasal congestion, headache",Sinusitis,3
+"facial pain, nasal congestion, fever",Sinusitis,3
+"nasal congestion, runny nose, headache, fever, facial pain",Sinusitis,3
+"facial pain, nasal congestion, headache, fever",Sinusitis,3
+"nasal congestion, runny nose, fever, headache",Sinusitis,3
+"facial pain, fever, headache, nasal congestion",Sinusitis,3
+"headache, fever, runny nose",Sinusitis,3
+"fever, runny nose, nasal congestion, facial pain, headache",Sinusitis,3
+"nasal congestion, runny nose, headache, fever",Sinusitis,3
+"nasal congestion, facial pain, fever, headache, runny nose",Sinusitis,3
+"nasal congestion, fever, runny nose",Sinusitis,3
+"facial pain, runny nose, fever, headache, nasal congestion",Sinusitis,3
+"facial pain, nasal congestion, fever",Sinusitis,3
+"facial pain, nasal congestion, runny nose",Sinusitis,3
+"nasal congestion, facial pain, fever, runny nose",Sinusitis,3
+"nasal congestion, fever, headache, runny nose, facial pain",Sinusitis,3
+"runny nose, facial pain, fever, headache",Sinusitis,3
+"headache, nasal congestion, runny nose, facial pain",Sinusitis,3
+"runny nose, facial pain, headache",Sinusitis,3
+"facial pain, fever, nasal congestion, runny nose, headache",Sinusitis,3
+"runny nose, facial pain, headache, fever, nasal congestion",Sinusitis,3
+"nasal congestion, facial pain, headache, runny nose, fever",Sinusitis,3
+"facial pain, nasal congestion, runny nose, headache",Sinusitis,3
+"runny nose, fever, facial pain",Sinusitis,3
+"facial pain, nasal congestion, fever, runny nose",Sinusitis,3
+"fever, facial pain, nasal congestion",Sinusitis,3
+"facial pain, nasal congestion, headache",Sinusitis,3
+"nasal congestion, fever, headache, facial pain, runny nose",Sinusitis,3
+"headache, nasal congestion, runny nose, facial pain",Sinusitis,3
+"runny nose, facial pain, nasal congestion, headache",Sinusitis,3
+"facial pain, headache, nasal congestion, fever",Sinusitis,3
+"runny nose, nasal congestion, headache, fever, facial pain",Sinusitis,3
+"fever, runny nose, nasal congestion",Sinusitis,3
+"runny nose, nasal congestion, facial pain",Sinusitis,3
+"runny nose, headache, nasal congestion, facial pain, fever",Sinusitis,3
+"runny nose, headache, facial pain, fever, nasal congestion",Sinusitis,3
+"facial pain, nasal congestion, headache, fever",Sinusitis,3
+"runny nose, headache, nasal congestion, fever, facial pain",Sinusitis,3
+"runny nose, headache, nasal congestion, fever, facial pain",Sinusitis,3
+"fever, headache, runny nose",Sinusitis,3
+"facial pain, runny nose, nasal congestion, headache, fever",Sinusitis,3
+"runny nose, nasal congestion, facial pain, headache, fever",Sinusitis,3
+"runny nose, fever, headache, facial pain, nasal congestion",Sinusitis,3
+"headache, fever, facial pain, runny nose, nasal congestion",Sinusitis,3
+"facial pain, runny nose, headache, nasal congestion, fever",Sinusitis,3
+"facial pain, headache, nasal congestion, runny nose",Sinusitis,3
+"stiffness, joint pain, swelling, heat",Gout,3
+"redness, swelling, stiffness",Gout,3
+"stiffness, joint pain, redness, heat",Gout,3
+"stiffness, redness, swelling",Gout,3
+"redness, stiffness, swelling",Gout,3
+"swelling, redness, joint pain",Gout,3
+"swelling, stiffness, redness",Gout,3
+"joint pain, stiffness, redness, heat",Gout,3
+"joint pain, heat, redness, stiffness",Gout,3
+"joint pain, redness, swelling",Gout,3
+"joint pain, heat, swelling, stiffness",Gout,3
+"heat, stiffness, redness",Gout,3
+"swelling, heat, stiffness, joint pain, redness",Gout,3
+"swelling, joint pain, redness, heat",Gout,3
+"heat, redness, stiffness, joint pain",Gout,3
+"redness, stiffness, heat",Gout,3
+"swelling, stiffness, joint pain",Gout,3
+"joint pain, swelling, heat, stiffness, redness",Gout,3
+"swelling, joint pain, stiffness",Gout,3
+"stiffness, redness, heat",Gout,3
+"heat, stiffness, joint pain, swelling, redness",Gout,3
+"stiffness, heat, redness, swelling, joint pain",Gout,3
+"swelling, redness, heat",Gout,3
+"joint pain, redness, swelling",Gout,3
+"joint pain, swelling, stiffness, heat, redness",Gout,3
+"redness, swelling, stiffness, joint pain, heat",Gout,3
+"heat, redness, swelling, joint pain, stiffness",Gout,3
+"heat, redness, swelling, joint pain",Gout,3
+"redness, joint pain, heat, swelling, stiffness",Gout,3
+"joint pain, redness, stiffness",Gout,3
+"swelling, heat, redness, stiffness, joint pain",Gout,3
+"redness, swelling, stiffness, joint pain",Gout,3
+"swelling, redness, heat, stiffness, joint pain",Gout,3
+"stiffness, heat, redness, swelling, joint pain",Gout,3
+"stiffness, joint pain, swelling, heat",Gout,3
+"redness, swelling, heat",Gout,3
+"heat, redness, swelling, stiffness, joint pain",Gout,3
+"joint pain, redness, swelling, heat",Gout,3
+"stiffness, heat, swelling, joint pain, redness",Gout,3
+"swelling, redness, stiffness, joint pain",Gout,3
+"heat, swelling, joint pain",Gout,3
+"joint pain, swelling, heat",Gout,3
+"joint pain, heat, swelling",Gout,3
+"stiffness, joint pain, swelling, heat",Gout,3
+"redness, stiffness, heat, swelling",Gout,3
+"swelling, redness, heat",Gout,3
+"heat, swelling, redness, joint pain",Gout,3
+"redness, stiffness, swelling, joint pain",Gout,3
+"redness, swelling, heat, stiffness, joint pain",Gout,3
+"heat, joint pain, swelling, redness, stiffness",Gout,3
+"fatigue, headache, dizziness, chest pain",Hypertension,3
+"headache, dizziness, blurred vision, chest pain, fatigue",Hypertension,3
+"chest pain, fatigue, headache",Hypertension,3
+"headache, dizziness, fatigue",Hypertension,3
+"dizziness, fatigue, headache, blurred vision, chest pain",Hypertension,3
+"chest pain, fatigue, headache, blurred vision",Hypertension,3
+"fatigue, dizziness, chest pain, blurred vision, headache",Hypertension,3
+"chest pain, dizziness, blurred vision, headache",Hypertension,3
+"chest pain, dizziness, headache, fatigue",Hypertension,3
+"fatigue, dizziness, chest pain",Hypertension,3
+"blurred vision, dizziness, fatigue, chest pain",Hypertension,3
+"blurred vision, fatigue, dizziness, headache",Hypertension,3
+"chest pain, fatigue, blurred vision",Hypertension,3
+"fatigue, headache, blurred vision, dizziness",Hypertension,3
+"headache, fatigue, blurred vision, chest pain, dizziness",Hypertension,3
+"fatigue, blurred vision, dizziness, headache, chest pain",Hypertension,3
+"chest pain, blurred vision, headache, dizziness",Hypertension,3
+"blurred vision, fatigue, chest pain, dizziness, headache",Hypertension,3
+"fatigue, chest pain, dizziness, blurred vision",Hypertension,3
+"headache, dizziness, fatigue, chest pain",Hypertension,3
+"headache, dizziness, blurred vision",Hypertension,3
+"chest pain, fatigue, dizziness",Hypertension,3
+"dizziness, blurred vision, chest pain, headache",Hypertension,3
+"fatigue, chest pain, dizziness, headache, blurred vision",Hypertension,3
+"headache, blurred vision, fatigue",Hypertension,3
+"blurred vision, chest pain, fatigue, headache, dizziness",Hypertension,3
+"chest pain, headache, dizziness",Hypertension,3
+"dizziness, chest pain, blurred vision, headache",Hypertension,3
+"blurred vision, chest pain, dizziness, headache, fatigue",Hypertension,3
+"fatigue, dizziness, blurred vision, chest pain, headache",Hypertension,3
+"blurred vision, headache, dizziness, chest pain",Hypertension,3
+"chest pain, fatigue, headache, dizziness, blurred vision",Hypertension,3
+"headache, chest pain, dizziness, blurred vision",Hypertension,3
+"dizziness, chest pain, fatigue",Hypertension,3
+"blurred vision, headache, fatigue, dizziness",Hypertension,3
+"headache, fatigue, dizziness",Hypertension,3
+"dizziness, chest pain, fatigue, blurred vision, headache",Hypertension,3
+"chest pain, headache, blurred vision",Hypertension,3
+"fatigue, chest pain, dizziness, headache",Hypertension,3
+"headache, dizziness, chest pain, blurred vision",Hypertension,3
+"headache, fatigue, dizziness, blurred vision",Hypertension,3
+"headache, blurred vision, fatigue",Hypertension,3
+"dizziness, blurred vision, chest pain",Hypertension,3
+"chest pain, blurred vision, headache, fatigue",Hypertension,3
+"chest pain, headache, dizziness, fatigue, blurred vision",Hypertension,3
+"dizziness, headache, blurred vision",Hypertension,3
+"headache, chest pain, fatigue",Hypertension,3
+"headache, fatigue, blurred vision, chest pain, dizziness",Hypertension,3
+"fatigue, dizziness, headache, blurred vision",Hypertension,3
+"blurred vision, chest pain, fatigue, dizziness",Hypertension,3

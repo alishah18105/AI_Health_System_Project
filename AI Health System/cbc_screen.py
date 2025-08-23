@@ -34,9 +34,13 @@ def open_cbc_screen():
     # Upload button (right)
     def upload_and_analyze():
         file_path = filedialog.askopenfilename(
-            title="Select CBC Report Image",
-            filetypes=[("Image Files", "*.jpg *.jpeg *.png")]
-        )
+            title="Select CBC Report",
+            filetypes=[
+                ("PDF or Image Files", "*.pdf *.jpg *.jpeg *.png"),
+                ("PDF Files", "*.pdf"),
+                ("Image Files", "*.jpg *.jpeg *.png")
+            ]
+    )
         if file_path:
             results, remarks = analyze_cbc_report(file_path)
 

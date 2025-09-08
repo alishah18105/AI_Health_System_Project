@@ -3,6 +3,8 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)  
 ![Repo Size](https://img.shields.io/github/repo-size/alishah18105/Python-Coding-Journey)  
 ![Last Commit](https://img.shields.io/github/last-commit/alishah18105/Python-Coding-Journey)
+![Contributors](https://img.shields.io/github/contributors/alishah18105/Python-Coding-Journey)  
+
 
 As a part of our **Artificial Intelligence course project**, I, along with my university mates **Ayesha Ehtisham** and **Farheen Arshad**, developed this AI-Powered Health Assistant.  
 

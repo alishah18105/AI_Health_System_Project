@@ -1,8 +1,11 @@
 # 🩺 AI Health System
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)  
-![Repo Size](https://img.shields.io/github/repo-size/alishah18105/AI_Health_System_Project)  
-![Last Commit](https://img.shields.io/github/last-commit/alishah18105/AI_Health_System_Project)
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python) 
+![Flask](https://img.shields.io/badge/Flask-API-green?logo=flask)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
+![Repo Size](https://img.shields.io/github/repo-size/alishah18105/AI_Health_System_Project)    
+![Last Commit](https://img.shields.io/github/last-commit/alishah18105/AI_Health_System_Project)  
 ![Contributors](https://img.shields.io/github/contributors/alishah18105/AI_Health_System_Project)  
 
 
@@ -41,7 +44,7 @@ The system also supports **speech-to-text & text-to-speech**, and includes a pat
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/AI_Health_System.git
+   git clone https://github.com/alishah18105/AI_Health_System_Project.git
    cd AI_Health_System
 
 2. **Create and activate a virtual environment**

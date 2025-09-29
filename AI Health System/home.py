@@ -7,7 +7,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QPixmap
 
 from chatbot import open_chatbot
-from cbc_screen import open_cbc_screen
+from cbc_screen import CBCReportScreen
 from tts_manager import speak
 
 
@@ -70,7 +70,7 @@ class HealthDashboard(QWidget):
             "CBC Report",
             "Check your Complete Blood Count report against reference values.",
             "  Open CBC Report  ",
-            open_cbc_screen
+            self.open_cbc_screen
         )
 
         cards_layout.addWidget(card1)
@@ -87,6 +87,9 @@ class HealthDashboard(QWidget):
 
         # 🔹 Spacer after cards (center vertically)
         main_layout.addStretch(1)
+    def open_cbc_screen(self):
+        self.cbc_window = CBCReportScreen()  # keep a reference
+        self.cbc_window.show()
 
     # 🔹 Create card function (with image at top)
     def create_card(self, icon_path, title_text, description, button_text, command):

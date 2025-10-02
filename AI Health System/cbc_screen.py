@@ -1,7 +1,7 @@
 import sys
 from PyQt6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QFileDialog, QTableWidget, QTableWidgetItem, QTextEdit
+    QFileDialog, QTableWidget, QTableWidgetItem, QTextEdit, QHeaderView
 )
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QColor, QBrush
@@ -13,7 +13,7 @@ class CBCReportScreen(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("CBC Report Analyzer")
-        self.showFullScreen() # Default window size
+        self.showFullScreen()  # Default window size
         self.setStyleSheet("background-color: #ecf0f1;")
 
         self.layout = QVBoxLayout(self)
@@ -30,7 +30,17 @@ class CBCReportScreen(QWidget):
         # Back Button
         back_btn = QPushButton("← Back")
         back_btn.setFont(QFont("Arial", 12, QFont.Weight.Bold))
-        back_btn.setStyleSheet("background-color: #e74c3c; color: white; padding: 5px 10px;")
+        back_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #e74c3c;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 8px;
+            }
+            QPushButton:hover {
+                background-color: #c0392b;
+            }
+        """)
         back_btn.clicked.connect(self.go_back)
         top_bar.addWidget(back_btn, alignment=Qt.AlignmentFlag.AlignLeft)
 
@@ -38,7 +48,15 @@ class CBCReportScreen(QWidget):
         upload_btn = QPushButton("📂 Upload CBC Report")
         upload_btn.setFont(QFont("Arial", 12, QFont.Weight.Bold))
         upload_btn.setStyleSheet("""
-            background-color: #3498db; color: white; padding: 5px 15px;
+            QPushButton {
+                background-color: #3498db;
+                color: white;
+                padding: 8px 20px;
+                border-radius: 8px;
+            }
+            QPushButton:hover {
+                background-color: #2980b9;
+            }
         """)
         upload_btn.clicked.connect(self.upload_and_analyze)
         top_bar.addWidget(upload_btn, alignment=Qt.AlignmentFlag.AlignRight)
@@ -49,38 +67,50 @@ class CBCReportScreen(QWidget):
         title.setStyleSheet("color: #2c3e50;")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(title)
-    
+
+    from PyQt6.QtWidgets import QHeaderView
+
     def create_main_content(self):
-        # Table
+        content_layout = QVBoxLayout()
+        self.layout.addLayout(content_layout)
+
+        # Table (70%)
         self.table = QTableWidget()
         self.table.setColumnCount(4)
         self.table.setHorizontalHeaderLabels(["Test", "Value", "Unit", "Status"])
-        self.table.horizontalHeader().setStretchLastSection(True)
+
+        # ✅ Make columns stretch to fill all horizontal space
+        header = self.table.horizontalHeader()
+        header.setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+
         self.table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
         self.table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
-        self.table.setColumnWidth(0, 400)  # Test column
-        self.table.setColumnWidth(1, 150)  # Value column
-        self.table.setColumnWidth(2, 150)  # Unit column
-        self.table.setColumnWidth(3, 150)
-        self.layout.addWidget(self.table)
 
-        # --- Spacer before remarks ---
-        spacer_label = QLabel("")  # empty label as spacer
-        spacer_label.setFixedHeight(20)  # increase height to push remarks down
-        self.layout.addWidget(spacer_label)
+        # ✅ Styles: black text for everything
+        self.table.setStyleSheet("""
+            QTableWidget { color: black; font-size: 13px; }
+            QHeaderView::section { background-color: #bdc3c7; color: black; font-weight: bold; }
+        """)
 
-        # Remarks
+        # ✅ Make vertical row numbers black
+        self.table.verticalHeader().setStyleSheet("color: black;")
+
+        content_layout.addWidget(self.table, stretch=7)
+
+        # Remarks (30%)
+        remarks_container = QVBoxLayout()
         remarks_label = QLabel("📝 Remarks:")
         remarks_label.setFont(QFont("Arial", 14, QFont.Weight.Bold))
         remarks_label.setStyleSheet("color: #2c3e50;")
-        self.layout.addWidget(remarks_label)
+        remarks_container.addWidget(remarks_label)
 
         self.remarks_box = QTextEdit()
         self.remarks_box.setFont(QFont("Arial", 12))
         self.remarks_box.setReadOnly(True)
         self.remarks_box.setStyleSheet("background-color: white; color: black;")
-        self.layout.addWidget(self.remarks_box)
+        remarks_container.addWidget(self.remarks_box)
 
+        content_layout.addLayout(remarks_container, stretch=3)
 
     def go_back(self):
         self.close()
@@ -121,14 +151,7 @@ class CBCReportScreen(QWidget):
         self.remarks_box.clear()
         for rem in remarks:
             self.remarks_box.append(f"• {rem}")
+
     def keyPressEvent(self, event):
         if event.key() == Qt.Key.Key_Escape:
             self.showNormal()  # exit fullscreen
-
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = CBCReportScreen()
-    window.show()
-    sys.exit(app.exec())

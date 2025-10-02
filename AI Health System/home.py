@@ -59,12 +59,13 @@ class HealthDashboard(QWidget):
 
         # Two cards with images
         card1 = self.create_card(
-            "assets/images/chatbot1.png",   # replace with your image path
+            "assets/images/chatbot1.png",
             "Emergency Services",
             "Get immediate help with medicines and instructions in emergency cases.",
             "  Open Emergency  ",
-            lambda: open_chatbot(name=self.name, age=self.age, allergy=self.allergy)
+            self.open_chatbot_screen   # 👈 new wrapper function
         )
+
         card2 = self.create_card(
             "assets/images/report.png",   # replace with your image path
             "CBC Report",
@@ -148,7 +149,8 @@ class HealthDashboard(QWidget):
                 background-color: #2980b9;
             }
         """)
-        btn.clicked.connect(lambda: (speak(button_text), self.close(), command()))
+        btn.clicked.connect(lambda: (speak(button_text), command()))
+
 
         # Add widgets to layout
         card_layout.addWidget(lbl_icon)
@@ -163,7 +165,18 @@ class HealthDashboard(QWidget):
     def keyPressEvent(self, event):
         if event.key() == Qt.Key.Key_Escape:
             self.showNormal()  # exit fullscreen
+    
+    def open_chatbot_screen(self):
+        self.chatbot_window = open_chatbot(
+            name=self.name,
+            age=self.age,
+            allergy=self.allergy
+        )
+        self.chatbot_window.show()
+        self.close()   # close dashboard only after showing chatbot
 
+
+    
 
 # Run App
 if __name__ == "__main__":

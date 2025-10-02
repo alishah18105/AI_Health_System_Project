@@ -1,80 +1,170 @@
-import tkinter as tk
-from tkinter import scrolledtext
-import requests
+import sys
 import threading
+import requests
 import speech_recognition as sr
+from PyQt6.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel,
+    QPushButton, QLineEdit, QScrollArea
+)
+from PyQt6.QtCore import Qt, pyqtSignal
+from PyQt6.QtGui import QFont
 
 API_URL = "http://127.0.0.1:5000"
 
-class HealthChatbotUI:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("Health Chatbot")
 
-        self.root.state('zoomed')
-        self.root.config(bg="#ecf0f1")
+class ChatBubble(QLabel):
+    """Custom rectangular chat bubble"""
+    def __init__(self, text, sender="bot"):
+        super().__init__(text)
+        self.setWordWrap(True)
+        self.setFont(QFont("Arial", 12))
+        self.setMargin(12)
+        self.setMinimumHeight(45)   # like button height
+        self.setMaximumWidth(500)   # bubble max width
 
-        # recognizer state
+        if sender == "user":
+            self.setStyleSheet("""
+                QLabel {
+                    background-color: #3498db;  /* blue */
+                    color: white;
+                    border-radius: 12px;
+                    padding: 10px;
+                }
+            """)
+            self.setAlignment(Qt.AlignmentFlag.AlignRight)
+        else:
+            self.setStyleSheet("""
+                QLabel {
+                    background-color: #2c3e50;  /* dark grey */
+                    color: white;
+                    border-radius: 12px;
+                    padding: 10px;
+                }
+            """)
+            self.setAlignment(Qt.AlignmentFlag.AlignLeft)
+
+
+class HealthChatbotUI(QWidget):
+    message_ready = pyqtSignal(str, str)
+    def __init__(self, name="", age="", allergy=""):
+        super().__init__()
+        self.message_ready.connect(self.show_message)
+        self.name = name
+        self.age = age
+        self.allergy = allergy
+
+        # 🔹 Window setup
+        self.setWindowTitle("Health Chatbot")
+        self.resize(700, 500)   # smaller window
+        self.setStyleSheet("background-color: #ecf0f1;")
+
         self.recognizer = sr.Recognizer()
         self.listening = False
         self.stop_listening = None
 
-        # UI layout
-        top_bar = tk.Frame(self.root, bg="#ecf0f1")
-        top_bar.pack(fill="x", pady=5)
-        back_btn = tk.Button(top_bar, text="← Back", font=("Arial", 12, "bold"),
-                             bg="#e74c3c", fg="white", command=self.go_back)
-        back_btn.pack(side="left", padx=10, pady=5)
+        layout = QVBoxLayout(self)
 
-        main_frame = tk.Frame(self.root, bg="#ecf0f1")
-        main_frame.place(relx=0.5, rely=0.5, anchor="center")
+        # 🔹 Top bar (Back + Title)
+        top_bar = QHBoxLayout()
+        back_btn = QPushButton("← Back")
+        back_btn.setFont(QFont("Arial", 11, QFont.Weight.Bold))
+        back_btn.setFixedHeight(35)
+        back_btn.setStyleSheet("""
+            QPushButton {
+                background-color: #e74c3c;
+                color: white;
+                padding: 5px 12px;
+                border-radius: 8px;
+            }
+            QPushButton:hover {
+                background-color: #c0392b;
+            }
+        """)
+        back_btn.clicked.connect(self.go_back)
+        top_bar.addWidget(back_btn, alignment=Qt.AlignmentFlag.AlignLeft)
 
-        self.chat_area = scrolledtext.ScrolledText(
-            main_frame, wrap=tk.WORD, state='disabled',
-            width=100, height=25, font=("Arial", 12)
-        )
-        self.chat_area.pack(padx=10, pady=10)
+        heading = QLabel("🩺 Health Chat Bot")
+        heading.setFont(QFont("Arial", 16, QFont.Weight.Bold))
+        heading.setStyleSheet("color: #2c3e50;")
+        heading.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        top_bar.addWidget(heading, stretch=1)
 
-        self.chat_area.tag_configure("user", foreground="#2c3e50", font=("Arial", 12, "bold"))   # Dark Blue
-        self.chat_area.tag_configure("bot", foreground="#27ae60", font=("Arial", 12))  
+        top_bar.addStretch()
+        layout.addLayout(top_bar)
 
-        input_frame = tk.Frame(main_frame, bg="#ecf0f1")
-        input_frame.pack(pady=(0, 10))
+        # 🔹 Chat area
+        self.scroll_area = QScrollArea()
+        self.scroll_area.setWidgetResizable(True)
+        self.chat_widget = QWidget()
+        self.chat_layout = QVBoxLayout(self.chat_widget)
+        self.chat_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
+        self.scroll_area.setWidget(self.chat_widget)
+        layout.addWidget(self.scroll_area, stretch=7)
 
-        self.user_input = tk.Entry(input_frame, width=70, font=("Arial", 12))
-        self.user_input.pack(side=tk.LEFT, padx=(10, 0))
-        self.user_input.bind("<Return>", lambda event: self.process_user_message())
+        # 🔹 Input bar
+        input_bar = QHBoxLayout()
+        self.user_input = QLineEdit()
+        self.user_input.setFont(QFont("Arial", 11))
+        self.user_input.setPlaceholderText("Type your message...")
+        self.user_input.setFixedHeight(38)
+        self.user_input.setStyleSheet("""
+            QLineEdit {
+                background-color: white;
+                border: 2px solid #bdc3c7;
+                border-radius: 12px;
+                padding: 6px 10px;
+            }
+            QLineEdit:focus {
+                border: 2px solid #3498db;
+            }
+""")
+        self.user_input.returnPressed.connect(self.process_user_message)
+        input_bar.addWidget(self.user_input, stretch=4)
 
-        self.mic_btn = tk.Button(input_frame, text="🎤 Speak", font=("Arial", 12, "bold"),
-                                 bg="#2ecc71", fg="white", command=self.toggle_listening)
-        self.mic_btn.pack(side=tk.LEFT, padx=5)
+        self.mic_btn = QPushButton("🎤")
+        self.mic_btn.setFixedSize(50, 45)
+        self.mic_btn.setStyleSheet("background-color:#2ecc71; color:white; border-radius:8px;")
+        self.mic_btn.clicked.connect(self.toggle_listening)
+        input_bar.addWidget(self.mic_btn)
 
-        self.send_btn = tk.Button(input_frame, text="Send", font=("Arial", 12, "bold"),
-                                  bg="#3498db", fg="white", command=self.process_user_message)
-        self.send_btn.pack(side=tk.LEFT, padx=10)
+        send_btn = QPushButton("Send")
+        send_btn.setFixedSize(70, 45)
+        send_btn.setStyleSheet("background-color:#3498db; color:white; border-radius:8px;")
+        send_btn.clicked.connect(self.process_user_message)
+        input_bar.addWidget(send_btn)
 
-        self.status_label = tk.Label(main_frame, text="Idle", fg="blue", bg="#ecf0f1", font=("Arial", 10))
-        self.status_label.pack()
+        layout.addLayout(input_bar)
 
-        # state tracking
-        self.last_disease = None
-        self.multiple_diseases = []
+        # 🔹 Status
+        self.status_label = QLabel("Idle")
+        self.status_label.setFont(QFont("Arial", 10))
+        self.status_label.setStyleSheet("color: #34495e;")
+        self.status_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        layout.addWidget(self.status_label)
 
-        self.show_message("Bot", "Hi! Please type or speak your symptoms or disease to start.")
+        # Initial greeting
+        self.show_message("bot", f"Hello {self.name or 'User'} 👋! Please type or speak your symptoms.")
 
     def go_back(self):
-        self.root.destroy()
+        self.close()
         from home import open_health_dashboard
         open_health_dashboard()
 
     def show_message(self, sender, message):
-        self.chat_area.configure(state='normal')
-        if sender == "You":
-            self.chat_area.insert(tk.END, f"{sender}: {message}\n\n", "user")
+        bubble = ChatBubble(message, sender=sender)
+        wrapper = QHBoxLayout()
+        if sender == "user":
+            wrapper.addStretch()
+            wrapper.addWidget(bubble)
         else:
-            self.chat_area.insert(tk.END, f"{sender}: {message}\n\n", "bot")
-        self.chat_area.configure(state='disabled')
-        self.chat_area.yview(tk.END)
+            wrapper.addWidget(bubble)
+            wrapper.addStretch()
+        container = QWidget()
+        container.setLayout(wrapper)
+        self.chat_layout.addWidget(container)
+        self.scroll_area.verticalScrollBar().setValue(
+            self.scroll_area.verticalScrollBar().maximum()
+        )
 
     # 🎤 Speech Recognition
     def toggle_listening(self):
@@ -84,36 +174,35 @@ class HealthChatbotUI:
             if self.stop_listening:
                 self.stop_listening(wait_for_stop=False)
             self.listening = False
-            self.mic_btn.config(text="🎤 Speak", bg="#2ecc71")
-            self.status_label.config(text="Idle")
+            self.mic_btn.setText("🎤")
+            self.mic_btn.setStyleSheet("background-color:#2ecc71; color:white;")
+            self.status_label.setText("Idle")
 
     def start_listening(self):
         def callback(recognizer, audio):
             try:
                 text = recognizer.recognize_google(audio)
-                self.user_input.delete(0, tk.END)
-                self.user_input.insert(0, text)
-                self.status_label.config(text="✅ Recognized")
+                self.user_input.setText(text)
+                self.status_label.setText("✅ Recognized")
             except sr.UnknownValueError:
-                self.status_label.config(text="❌ Could not understand")
+                self.status_label.setText("❌ Could not understand")
             except sr.RequestError:
-                self.status_label.config(text="⚠️ API unavailable")
+                self.status_label.setText("⚠️ API unavailable")
 
-        self.status_label.config(text="🎤 Listening...")
-        self.mic_btn.config(text="🛑 Stop", bg="#e67e22")
+        self.status_label.setText("🎤 Listening...")
+        self.mic_btn.setText("🛑")
+        self.mic_btn.setStyleSheet("background-color:#e67e22; color:white;")
         self.listening = True
         self.stop_listening = self.recognizer.listen_in_background(sr.Microphone(), callback)
 
-    # Chatbot logic
+    # 🔹 Message Handling
     def process_user_message(self):
-        user_text = self.user_input.get().strip()
+        user_text = self.user_input.text().strip()
         if not user_text:
             return
+        self.show_message("user", user_text)
+        self.user_input.clear()
 
-        self.show_message("You", user_text)
-        self.user_input.delete(0, tk.END)
-
-        # Decide whether this is info query or symptom/disease entry
         if any(word in user_text.lower() for word in ["description", "medication", "prevention", "diet"]):
             threading.Thread(target=self.query_info, args=(user_text,)).start()
         else:
@@ -123,27 +212,27 @@ class HealthChatbotUI:
         try:
             resp = requests.post(f"{API_URL}/predict", json={"symptoms": text})
             data = resp.json()
+
             if "error" in data:
-                self.show_message("Bot", f"Error: {data['error']}")
+                self.message_ready.emit("bot", f"Error: {data['error']}")
                 return
 
             if data.get("direct_match"):
                 self.last_disease = data["disease"]
-                self.show_message("Bot", f"You directly mentioned {self.last_disease}.")
-                self.show_message("Bot", f"Description: {data['description']}")
-                self.show_message("Bot", data["ask_more"])
+                self.message_ready.emit("bot", f"You mentioned {self.last_disease}.")
+                self.message_ready.emit("bot", f"Description: {data['description']}")
+                self.message_ready.emit("bot", data["ask_more"])
                 return
 
             self.multiple_diseases = [d["disease"] for d in data.get("predictions", [])]
             self.last_disease = None
-            self.show_message("Bot", data.get("ask_more", "Which disease do you want details about?"))
+            self.message_ready.emit("bot", data.get("ask_more", "Which disease do you want details about?"))
 
         except Exception as e:
-            self.show_message("Bot", f"Error connecting to API: {e}")
+            self.message_ready.emit("bot", f"Error connecting to API: {e}")
 
     def query_info(self, text):
         try:
-            # extract disease & info type
             info_type = None
             for option in ["description", "medication", "prevention", "diet plan"]:
                 if option in text.lower():
@@ -151,37 +240,37 @@ class HealthChatbotUI:
                     break
 
             disease = None
-            for d in self.multiple_diseases:
+            for d in getattr(self, "multiple_diseases", []):
                 if d.lower() in text.lower():
                     disease = d
                     break
             if not disease:
-                disease = self.last_disease  # fallback
+                disease = getattr(self, "last_disease", None)
 
             resp = requests.post(f"{API_URL}/info", json={
                 "disease": disease,
                 "info_type": info_type
             })
+            print("DEBUG /predict response:", resp.text)
             data = resp.json()
             if "error" in data:
-                self.show_message("Bot", f"Error: {data['error']}")
+                self.message_ready.emit("bot", f"Error: {data['error']}")
                 return
 
             self.last_disease = data["disease"]
-            self.show_message("Bot", f"{info_type.capitalize()} for {self.last_disease}: {data['info']}")
-            self.show_message("Bot", data.get("ask_more", ""))
+            self.message_ready.emit("bot", f"{info_type.capitalize()} for {self.last_disease}: {data['info']}")
+            self.message_ready.emit("bot", data.get("ask_more", ""))
 
         except Exception as e:
-            self.show_message("Bot", f"Error connecting to API: {e}")
+            self.message_ready.emit("bot", f"Error connecting to API: {e}")
 
 
 def open_chatbot(name="", age="", allergy=""):
-    root = tk.Tk()
-    app = HealthChatbotUI(root)
-    root.mainloop()
+    return HealthChatbotUI(name, age, allergy)
 
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    app = HealthChatbotUI(root)
-    root.mainloop()
+    app = QApplication(sys.argv)
+    window = HealthChatbotUI("Ali", "22", "None")
+    window.show()
+    sys.exit(app.exec())

@@ -164,7 +164,12 @@ class HealthDashboard(QWidget):
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key.Key_Escape:
-            self.showNormal()  # exit fullscreen
+            # Just exit fullscreen mode
+            if self.isFullScreen():
+                self.showNormal()
+            else:
+                self.showFullScreen()
+  # exit fullscreen
     
     def open_chatbot_screen(self):
         self.chatbot_window = open_chatbot(

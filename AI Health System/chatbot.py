@@ -9,6 +9,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt, pyqtSignal
 from PyQt6.QtGui import QFont
 
+
 API_URL = "http://127.0.0.1:5000"
 
 
@@ -49,13 +50,15 @@ class HealthChatbotUI(QWidget):
     def __init__(self, name="", age="", allergy=""):
         super().__init__()
         self.message_ready.connect(self.show_message)
+        self.showFullScreen()
+
         self.name = name
         self.age = age
         self.allergy = allergy
 
         # 🔹 Window setup
         self.setWindowTitle("Health Chatbot")
-        self.resize(700, 500)   # smaller window
+           # smaller window
         self.setStyleSheet("background-color: #ecf0f1;")
 
         self.recognizer = sr.Recognizer()
@@ -146,9 +149,17 @@ class HealthChatbotUI(QWidget):
         self.show_message("bot", f"Hello {self.name or 'User'} 👋! Please type or speak your symptoms.")
 
     def go_back(self):
+        from home import HealthDashboard
         self.close()
-        from home import open_health_dashboard
-        open_health_dashboard()
+        self.dashboard_window = HealthDashboard(
+            patient_id=None, 
+            name=self.name, 
+            age=self.age, 
+            allergy=self.allergy
+        )
+        self.dashboard_window.show()
+
+
 
     def show_message(self, sender, message):
         bubble = ChatBubble(message, sender=sender)
@@ -263,6 +274,14 @@ class HealthChatbotUI(QWidget):
 
         except Exception as e:
             self.message_ready.emit("bot", f"Error connecting to API: {e}")
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key.Key_Escape:
+            # Just exit fullscreen mode
+            if self.isFullScreen():
+                self.showNormal()
+            else:
+                self.showFullScreen()
 
 
 def open_chatbot(name="", age="", allergy=""):

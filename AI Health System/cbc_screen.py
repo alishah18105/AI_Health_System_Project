@@ -113,9 +113,16 @@ class CBCReportScreen(QWidget):
         content_layout.addLayout(remarks_container, stretch=3)
 
     def go_back(self):
+        from home import HealthDashboard
         self.close()
-        from home import open_health_dashboard
-        open_health_dashboard()
+        self.dashboard_window = HealthDashboard(
+            patient_id= 1, 
+            name= "User", 
+            age= 20, 
+            allergy= "None"
+        )
+        self.dashboard_window.show()
+
 
     def upload_and_analyze(self):
         file_path, _ = QFileDialog.getOpenFileName(
@@ -154,4 +161,8 @@ class CBCReportScreen(QWidget):
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key.Key_Escape:
-            self.showNormal()  # exit fullscreen
+            # Just exit fullscreen mode
+            if self.isFullScreen():
+                self.showNormal()
+            else:
+                self.showFullScreen()

@@ -2,7 +2,7 @@ import sys
 import psycopg2
 from PyQt6.QtWidgets import (
     QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QHBoxLayout,
-    QFrame, QGraphicsOpacityEffect
+    QFrame, QGraphicsOpacityEffect, QComboBox
 )
 from PyQt6.QtCore import Qt, QPropertyAnimation, QEasingCurve, QTimer
 from PyQt6.QtGui import QFont, QPalette, QColor
@@ -50,6 +50,7 @@ class FormScreen(QWidget):
         self.status_label.setFont(QFont("Segoe UI", 12))
         self.status_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(self.status_label)
+        main_layout.addSpacing(25)
 
         # ---------------- Returning Patient Section ----------------
         returning_label = QLabel("If you have visited before:")
@@ -95,6 +96,12 @@ class FormScreen(QWidget):
         row_widget.setLayout(row_layout)
         main_layout.addWidget(row_widget, alignment=Qt.AlignmentFlag.AlignCenter)
         main_layout.addSpacing(40)
+
+        self.result_dropdown = QComboBox()
+        self.result_dropdown.setFont(QFont("Segoe UI", 12))
+        self.result_dropdown.setVisible(False)
+        self.result_dropdown.activated.connect(self.open_selected_patient)
+        main_layout.addWidget(self.result_dropdown, alignment=Qt.AlignmentFlag.AlignCenter)
 
         # ---------------- Separator ----------------
         separator = QFrame()
@@ -181,6 +188,7 @@ class FormScreen(QWidget):
                 background-color: #3498DB;
             }
         """)
+        register_btn.clicked.connect(self.register_patient)
         main_layout.addWidget(register_btn, alignment=Qt.AlignmentFlag.AlignCenter)
 
         # ✅ Fade-in Animation
@@ -212,11 +220,99 @@ class FormScreen(QWidget):
         )
 
     def fetch_patient(self):
-        phone = self.phone_entry.text()
+        phone = self.phone_entry.text().strip()
         if not phone:
             self.status_label.setText("❌ Please enter phone number")
             self.status_label.setStyleSheet("color: red;")
             return
+
+        try:
+            conn = self.connect_db()
+            cur = conn.cursor()
+
+            cur.execute("SELECT id, name, ph_num, age, allergy FROM patients WHERE ph_num = %s", (phone,))
+            results = cur.fetchall()
+            cur.close()
+            conn.close()
+
+            if not results:
+                self.status_label.setText("❌ No patient found with this phone number.")
+                self.status_label.setStyleSheet("color: red;")
+                self.result_dropdown.setVisible(False)
+                return
+
+            if len(results) == 1:
+                # Directly open dashboard
+                patient = results[0]
+                self.open_dashboard(patient)
+
+            else:
+                # Multiple patients found → show dropdown
+                self.result_dropdown.clear()
+                for p in results:
+                    self.result_dropdown.addItem(f"{p[1]} (Age: {p[3]})", p)  # ✅ only Name + Age visible
+                self.result_dropdown.setVisible(True)
+                self.status_label.setText("⚠ Multiple patients found. Select one from dropdown.")
+                self.status_label.setStyleSheet("color: orange;")
+
+        except Exception as e:
+            self.status_label.setText(f"❌ Error: {e}")
+            self.status_label.setStyleSheet("color: red;")
+
+    def register_patient(self):
+        name = self.name_entry.text().strip()
+        phone = self.ph_entry.text().strip()
+        age = self.age_entry.text().strip()
+        allergy = self.allergy_entry.text().strip()
+
+        # ✅ Validation
+        if not (name and phone and age):
+            self.status_label.setText("❌ Name, Phone, and Age are required.")
+            self.status_label.setStyleSheet("color: red;")
+            return
+
+        try:
+            conn = self.connect_db()
+            cur = conn.cursor()
+
+            cur.execute("""
+                INSERT INTO patients (name, ph_num, age, allergy)
+                VALUES (%s, %s, %s, %s)
+            """, (name, phone, age, allergy))
+
+            conn.commit()
+            cur.close()
+            conn.close()
+
+            self.status_label.setText("✅ Patient registered successfully!")
+            self.status_label.setStyleSheet("color: green;")
+
+            # Clear fields after success
+            self.name_entry.clear()
+            self.ph_entry.clear()
+            self.age_entry.clear()
+            self.allergy_entry.clear()
+
+        except Exception as e:
+            self.status_label.setText(f"❌ Error: {e}")
+            self.status_label.setStyleSheet("color: red;")
+    
+    def open_selected_patient(self, index):
+        patient = self.result_dropdown.itemData(index)
+        if patient:
+            self.open_dashboard(patient)
+
+    def open_dashboard(self, patient):
+        """Opens HealthDashboard with selected patient"""
+        patient_id, name, phone, age, allergy = patient
+        self.close()
+        self.dashboard = HealthDashboard(
+            patient_id=patient_id,
+            name=name,
+            age=str(age),
+            allergy=allergy if allergy else "None"
+        )
+        self.dashboard.show()
 
 
 def open_form():
